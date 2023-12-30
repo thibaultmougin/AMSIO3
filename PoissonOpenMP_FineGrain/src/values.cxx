@@ -35,7 +35,7 @@ void Values::init()
 {
   int i, j, k;
   double x, y, z;
-
+  #pragma omp parallel for default ( shared ) private(x,y,z) collapse (3)
   for (i=m_imin[0]; i<=m_imax[0]; i++)
     for (j=m_imin[1]; j<=m_imax[1]; j++)
       for (k=m_imin[2]; k<=m_imax[2]; k++) {
@@ -50,6 +50,7 @@ void Values::boundaries()
 {
   int i[3];
   double x[3];
+  
   for (int idim=0; idim<3; idim++) {
 
     int jdim = (idim+1)%3;
@@ -63,6 +64,8 @@ void Values::boundaries()
 
     i[idim] = omin;
     x[idim] = m_xmin[idim];
+    
+    #pragma omp parallel for collapse (2)
     for (p=pmin; p<=pmax; p++)
       for (q=qmin; q<=qmax; q++) {
         i[jdim] = p; i[kdim] = q;
@@ -73,6 +76,8 @@ void Values::boundaries()
 
     i[idim] = omax;
     x[idim] = m_xmax[idim];
+
+    #pragma omp parallel for collapse (2)
     for (p=pmin; p<=pmax; p++)
       for (q=qmin; q<=qmax; q++) {
         i[jdim] = p; i[kdim] = q;

@@ -62,7 +62,8 @@ double Scheme::iteration_domaine(int imin, int imax,
   double du, du1, du2, du_sum = 0.0;
   
   double x, y, z;
-
+  
+  #pragma omp parallel for default ( shared ) private(x,y,z,du1,du2,du,du_sum) collapse (3)
   for (i = imin; i <= imax; i++)
     for (j = jmin; j <= jmax; j++)
       for (k = kmin; k <= kmax; k++) {
