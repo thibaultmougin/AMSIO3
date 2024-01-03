@@ -48,7 +48,7 @@ int main(int argc, char *argv[])
             << T_init.elapsed() << " s\n" << std::endl;
 
   double T_previous;
-  #pragma omp parallel default(shared)
+  #pragma omp parallel default(shared) 
   {
   for (int it = 0; it < itMax; it++)
   {
@@ -61,9 +61,13 @@ int main(int argc, char *argv[])
 
     T_previous = T_calcul.elapsed();
     T_calcul.start();
+    
     C.iteration();
+    #pragma omp barrier
+
     T_calcul.stop();
 
+    #pragma omp master
     std::cerr << "iteration " << std::setw(5) << it
               << "  variation   " << std::setw(10) << C.variation()
               << "  temps calcul " << std::setw(10) << std::setprecision(6)
@@ -79,7 +83,7 @@ int main(int argc, char *argv[])
   }
 
   T_total.stop();
-
+  #pragma omp master
   std::cerr << "\n"
             << std::setw(26) << "temps total  "
             << std::setw(10) << T_total.elapsed() << " s\n"

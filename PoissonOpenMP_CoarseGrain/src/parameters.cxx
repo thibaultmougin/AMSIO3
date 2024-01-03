@@ -185,9 +185,9 @@ void Parameters::nthreads(int n)
 
 void Parameters::balance()
 {
-  if (!m_balanceOn)
+  /*if (!m_balanceOn)
     return;
-
+  */
   double t_total = 0.0, t_mean;
   int k;
 

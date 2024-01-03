@@ -40,21 +40,32 @@ double Scheme::present()
 bool Scheme::iteration()
 {
 
+
+  m_duv=0.;
   int imin, imax;
 
   imin = m_P.imin(0);
   imax = m_P.imax(0);
 
-  m_duv = iteration_domaine(
+  int iTh = 0;
+  #ifdef _OPENMP
+    iTh = omp_get_thread_num();
+    //std::cout << iTh << " " << m_P.startIndex(iTh) << " " << m_P.endIndex(iTh) << std::endl;
+    imin = m_P.startIndex(iTh);
+    imax = m_P.endIndex(iTh);
+  #endif
+  m_duv += iteration_domaine(
       imin, imax,
       m_P.imin(1), m_P.imax(1),
       m_P.imin(2), m_P.imax(2));
 
   m_t += m_dt;
+  //std::cout << &m_u << " " << &m_v << " " << iTh << std::endl;
+  #pragma omp master
   m_u.swap(m_v);
 
 
-
+  
   return true;
 }
 
@@ -91,8 +102,8 @@ double Scheme::iteration_domaine(int imin, int imax,
 
         du_sum += du > 0 ? du : -du;
       }
-
-  return du_sum;
+  //std::cout << du_sum << std::endl;
+  return du_sum; 
 }
 
 const Values & Scheme::getOutput()
