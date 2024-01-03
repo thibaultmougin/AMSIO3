@@ -52,6 +52,8 @@ int main(int argc, char *argv[])
   {
   for (int it = 0; it < itMax; it++)
   {
+    #pragma omp barrier
+
     if (freq > 0 && it % freq == 0)
     {
       T_other.start();
@@ -63,7 +65,6 @@ int main(int argc, char *argv[])
     T_calcul.start();
     
     C.iteration();
-    #pragma omp barrier
 
     T_calcul.stop();
 

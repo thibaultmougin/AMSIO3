@@ -8,30 +8,20 @@ It. max :  10
 Dt :       6.21887e-07
 
 
-  temps init     0.600293 s
+  temps init     0.566599 s
 
-0x7ffe01fb8440 0x7ffe01fb84d8 0
-iteration     0  variation      60001.3  temps calcul   0.852062 s
-0x7ffe01fb8440 0x7ffe01fb84d8 0
-iteration     1  variation        34083  temps calcul   0.777895 s
-0x7ffe01fb8440 0x7ffe01fb84d8 0
-iteration     2  variation      25295.6  temps calcul   0.720292 s
-0x7ffe01fb8440 0x7ffe01fb84d8 0
-iteration     3  variation      20610.9  temps calcul   0.719363 s
-0x7ffe01fb8440 0x7ffe01fb84d8 0
-iteration     4  variation        17763  temps calcul   0.712347 s
-0x7ffe01fb8440 0x7ffe01fb84d8 0
-iteration     5  variation      15827.5  temps calcul   0.734071 s
-0x7ffe01fb8440 0x7ffe01fb84d8 0
-iteration     6  variation      14415.8  temps calcul   0.864217 s
-0x7ffe01fb8440 0x7ffe01fb84d8 0
-iteration     7  variation      13330.9  temps calcul   0.725141 s
-0x7ffe01fb8440 0x7ffe01fb84d8 0
-iteration     8  variation      12464.5  temps calcul   0.708721 s
-0x7ffe01fb8440 0x7ffe01fb84d8 0
-iteration     9  variation      11751.7  temps calcul   0.705839 s
+iteration     0  variation      60001.3  temps calcul   0.830413 s
+iteration     1  variation        34083  temps calcul   0.738222 s
+iteration     2  variation      25295.6  temps calcul   0.724608 s
+iteration     3  variation      20610.9  temps calcul   0.719376 s
+iteration     4  variation        17763  temps calcul   0.710896 s
+iteration     5  variation      15827.5  temps calcul   0.702381 s
+iteration     6  variation      14415.8  temps calcul   0.708119 s
+iteration     7  variation      13330.9  temps calcul   0.714593 s
+iteration     8  variation      12464.5  temps calcul   0.708466 s
+iteration     9  variation      11751.7  temps calcul   0.707733 s
 
-             temps total     8.12049 s
+             temps total      7.8317 s
 
 
 OpenMP Coarse Grain Computation using 1 thread(s)
@@ -43,30 +33,20 @@ It. max :  10
 Dt :       6.21887e-07
 
 
-  temps init     0.509102 s
+  temps init     0.524847 s
 
-0x7ffc4db9bcb0 0x7ffc4db9bd48 0
-iteration     0  variation      60001.3  temps calcul    0.70933 s
-0x7ffc4db9bcb0 0x7ffc4db9bd48 0
-iteration     1  variation        34083  temps calcul   0.704875 s
-0x7ffc4db9bcb0 0x7ffc4db9bd48 0
-iteration     2  variation      25295.6  temps calcul   0.712903 s
-0x7ffc4db9bcb0 0x7ffc4db9bd48 0
-iteration     3  variation      20610.9  temps calcul   0.703039 s
-0x7ffc4db9bcb0 0x7ffc4db9bd48 0
-iteration     4  variation        17763  temps calcul   0.702521 s
-0x7ffc4db9bcb0 0x7ffc4db9bd48 0
-iteration     5  variation      15827.5  temps calcul   0.700152 s
-0x7ffc4db9bcb0 0x7ffc4db9bd48 0
-iteration     6  variation      14415.8  temps calcul   0.702554 s
-0x7ffc4db9bcb0 0x7ffc4db9bd48 0
-iteration     7  variation      13330.9  temps calcul   0.703817 s
-0x7ffc4db9bcb0 0x7ffc4db9bd48 0
-iteration     8  variation      12464.5  temps calcul   0.700371 s
-0x7ffc4db9bcb0 0x7ffc4db9bd48 0
-iteration     9  variation      11751.7  temps calcul   0.700123 s
+iteration     0  variation      60001.3  temps calcul   0.713274 s
+iteration     1  variation        34083  temps calcul    0.71803 s
+iteration     2  variation      25295.6  temps calcul   0.707235 s
+iteration     3  variation      20610.9  temps calcul   0.715795 s
+iteration     4  variation        17763  temps calcul   0.709284 s
+iteration     5  variation      15827.5  temps calcul   0.706631 s
+iteration     6  variation      14415.8  temps calcul   0.704481 s
+iteration     7  variation      13330.9  temps calcul   0.706752 s
+iteration     8  variation      12464.5  temps calcul   0.703036 s
+iteration     9  variation      11751.7  temps calcul   0.705465 s
 
-             temps total     7.54897 s
+             temps total     7.61507 s
 
 
 OpenMP Coarse Grain Computation using 2 thread(s)
@@ -78,40 +58,20 @@ It. max :  10
 Dt :       6.21887e-07
 
 
-  temps init     0.493867 s
+  temps init     0.523221 s
 
-0x7ffd00c7a960 0x7ffd00c7a9f8 1
-0x7ffd00c7a960 0x7ffd00c7a9f8 0
-iteration     0  variation      60001.3  temps calcul   0.544375 s
-0x7ffd00c7a960 0x7ffd00c7a9f8 1
-0x7ffd00c7a960 0x7ffd00c7a9f8 0
-iteration     1  variation        34083  temps calcul   0.551357 s
-0x7ffd00c7a960 0x7ffd00c7a9f8 1
-0x7ffd00c7a960 0x7ffd00c7a9f8 0
-iteration     2  variation      25295.6  temps calcul   0.556826 s
-0x7ffd00c7a960 0x7ffd00c7a9f8 1
-0x7ffd00c7a960 0x7ffd00c7a9f8 0
-iteration     3  variation      20610.9  temps calcul   0.547658 s
-0x7ffd00c7a960 0x7ffd00c7a9f8 1
-0x7ffd00c7a960 0x7ffd00c7a9f8 0
-iteration     4  variation        17763  temps calcul   0.551847 s
-0x7ffd00c7a960 0x7ffd00c7a9f8 1
-0x7ffd00c7a960 0x7ffd00c7a9f8 0
-iteration     5  variation      15827.5  temps calcul   0.560727 s
-0x7ffd00c7a960 0x7ffd00c7a9f8 1
-0x7ffd00c7a960 0x7ffd00c7a9f8 0
-iteration     6  variation      14415.8  temps calcul   0.565931 s
-0x7ffd00c7a960 0x7ffd00c7a9f8 1
-0x7ffd00c7a960 0x7ffd00c7a9f8 0
-iteration     7  variation      13330.9  temps calcul   0.566063 s
-0x7ffd00c7a960 0x7ffd00c7a9f8 1
-0x7ffd00c7a960 0x7ffd00c7a9f8 0
-iteration     8  variation      12464.5  temps calcul    0.57647 s
-0x7ffd00c7a960 0x7ffd00c7a9f8 1
-0x7ffd00c7a960 0x7ffd00c7a9f8 0
-iteration     9  variation      11751.7  temps calcul   0.569225 s
+iteration     0  variation      60001.3  temps calcul   0.184121 s
+iteration     1  variation        34083  temps calcul   0.185241 s
+iteration     2  variation      25295.6  temps calcul   0.182788 s
+iteration     3  variation      20610.9  temps calcul    0.17621 s
+iteration     4  variation        17763  temps calcul   0.176352 s
+iteration     5  variation      15827.5  temps calcul   0.176632 s
+iteration     6  variation      14415.8  temps calcul   0.176128 s
+iteration     7  variation      13330.9  temps calcul   0.176422 s
+iteration     8  variation      12464.5  temps calcul   0.176085 s
+iteration     9  variation      11751.7  temps calcul   0.175355 s
 
-             temps total     6.08493 s
+             temps total     5.59407 s
 
 
 OpenMP Coarse Grain Computation using 3 thread(s)
@@ -123,50 +83,20 @@ It. max :  10
 Dt :       6.21887e-07
 
 
-  temps init     0.527646 s
+  temps init     0.514889 s
 
-0x7ffff2235ea0 0x7ffff2235f38 2
-0x7ffff2235ea0 0x7ffff2235f38 1
-0x7ffff2235ea0 0x7ffff2235f38 0
-iteration     0  variation      60001.3  temps calcul          0 s
-0x7ffff2235ea0 0x7ffff2235f38 2
-0x7ffff2235ea0 0x7ffff2235f38 1
-0x7ffff2235ea0 0x7ffff2235f38 0
-iteration     1  variation        34083  temps calcul   0.520096 s
-0x7ffff2235ea0 0x7ffff2235f38 2
-0x7ffff2235ea0 0x7ffff2235f38 1
-0x7ffff2235ea0 0x7ffff2235f38 0
-iteration     2  variation      25295.6  temps calcul   0.509489 s
-0x7ffff2235ea0 0x7ffff2235f38 2
-0x7ffff2235ea0 0x7ffff2235f38 1
-0x7ffff2235ea0 0x7ffff2235f38 0
-iteration     3  variation      20610.9  temps calcul   0.507415 s
-0x7ffff2235ea0 0x7ffff2235f38 2
-0x7ffff2235ea0 0x7ffff2235f38 1
-0x7ffff2235ea0 0x7ffff2235f38 0
-iteration     4  variation        17763  temps calcul   0.508656 s
-0x7ffff2235ea0 0x7ffff2235f38 2
-0x7ffff2235ea0 0x7ffff2235f38 1
-0x7ffff2235ea0 0x7ffff2235f38 0
-iteration     5  variation      15827.5  temps calcul   0.524299 s
-0x7ffff2235ea0 0x7ffff2235f38 2
-0x7ffff2235ea0 0x7ffff2235f38 1
-0x7ffff2235ea0 0x7ffff2235f38 0
-iteration     6  variation      14415.8  temps calcul          0 s
-0x7ffff2235ea0 0x7ffff2235f38 2
-0x7ffff2235ea0 0x7ffff2235f38 1
-0x7ffff2235ea0 0x7ffff2235f38 0
-iteration     7  variation      13330.9  temps calcul   0.508663 s
-0x7ffff2235ea0 0x7ffff2235f38 2
-0x7ffff2235ea0 0x7ffff2235f38 1
-0x7ffff2235ea0 0x7ffff2235f38 0
-iteration     8  variation      12464.5  temps calcul   0.508093 s
-0x7ffff2235ea0 0x7ffff2235f38 2
-0x7ffff2235ea0 0x7ffff2235f38 1
-0x7ffff2235ea0 0x7ffff2235f38 0
-iteration     9  variation      11751.7  temps calcul   0.507015 s
+iteration     0  variation      60001.3  temps calcul    0.12784 s
+iteration     1  variation        34083  temps calcul   0.131397 s
+iteration     2  variation      25295.6  temps calcul   0.127216 s
+iteration     3  variation      20610.9  temps calcul   0.125849 s
+iteration     4  variation        17763  temps calcul   0.128553 s
+iteration     5  variation      15827.5  temps calcul   0.124104 s
+iteration     6  variation      14415.8  temps calcul   0.126797 s
+iteration     7  variation      13330.9  temps calcul   0.124421 s
+iteration     8  variation      12464.5  temps calcul   0.120661 s
+iteration     9  variation      11751.7  temps calcul   0.122628 s
 
-             temps total     5.64063 s
+             temps total     5.08801 s
 
 
 OpenMP Coarse Grain Computation using 4 thread(s)
@@ -178,60 +108,20 @@ It. max :  10
 Dt :       6.21887e-07
 
 
-  temps init     0.558265 s
+  temps init     0.506583 s
 
-0x7ffd1d230b20 0x7ffd1d230bb8 3
-0x7ffd1d230b20 0x7ffd1d230bb8 2
-0x7ffd1d230b20 0x7ffd1d230bb8 1
-0x7ffd1d230b20 0x7ffd1d230bb8 0
-iteration     0  variation      60001.3  temps calcul   0.450997 s
-0x7ffd1d230b20 0x7ffd1d230bb8 3
-0x7ffd1d230b20 0x7ffd1d230bb8 2
-0x7ffd1d230b20 0x7ffd1d230bb8 1
-0x7ffd1d230b20 0x7ffd1d230bb8 0
-iteration     1  variation        34083  temps calcul   0.445418 s
-0x7ffd1d230b20 0x7ffd1d230bb8 3
-0x7ffd1d230b20 0x7ffd1d230bb8 2
-0x7ffd1d230b20 0x7ffd1d230bb8 1
-0x7ffd1d230b20 0x7ffd1d230bb8 0
-iteration     2  variation      25295.6  temps calcul   0.424995 s
-0x7ffd1d230b20 0x7ffd1d230bb8 3
-0x7ffd1d230b20 0x7ffd1d230bb8 2
-0x7ffd1d230b20 0x7ffd1d230bb8 1
-0x7ffd1d230b20 0x7ffd1d230bb8 0
-iteration     3  variation      20610.9  temps calcul   0.416057 s
-0x7ffd1d230b20 0x7ffd1d230bb8 3
-0x7ffd1d230b20 0x7ffd1d230bb8 2
-0x7ffd1d230b20 0x7ffd1d230bb8 1
-0x7ffd1d230b20 0x7ffd1d230bb8 0
-iteration     4  variation        17763  temps calcul    0.41997 s
-0x7ffd1d230b20 0x7ffd1d230bb8 3
-0x7ffd1d230b20 0x7ffd1d230bb8 2
-0x7ffd1d230b20 0x7ffd1d230bb8 1
-0x7ffd1d230b20 0x7ffd1d230bb8 0
-iteration     5  variation      15827.5  temps calcul   0.428775 s
-0x7ffd1d230b20 0x7ffd1d230bb8 3
-0x7ffd1d230b20 0x7ffd1d230bb8 2
-0x7ffd1d230b20 0x7ffd1d230bb8 1
-0x7ffd1d230b20 0x7ffd1d230bb8 0
-iteration     6  variation      14415.8  temps calcul   0.427624 s
-0x7ffd1d230b20 0x7ffd1d230bb8 3
-0x7ffd1d230b20 0x7ffd1d230bb8 2
-0x7ffd1d230b20 0x7ffd1d230bb8 1
-0x7ffd1d230b20 0x7ffd1d230bb8 0
-iteration     7  variation      13330.9  temps calcul     0.4295 s
-0x7ffd1d230b20 0x7ffd1d230bb8 3
-0x7ffd1d230b20 0x7ffd1d230bb8 2
-0x7ffd1d230b20 0x7ffd1d230bb8 1
-0x7ffd1d230b20 0x7ffd1d230bb8 0
-iteration     8  variation      12464.5  temps calcul   0.426661 s
-0x7ffd1d230b20 0x7ffd1d230bb8 3
-0x7ffd1d230b20 0x7ffd1d230bb8 2
-0x7ffd1d230b20 0x7ffd1d230bb8 1
-0x7ffd1d230b20 0x7ffd1d230bb8 0
-iteration     9  variation      11751.7  temps calcul   0.423404 s
+iteration     0  variation      60001.3  temps calcul    0.09705 s
+iteration     1  variation        34083  temps calcul  0.0982563 s
+iteration     2  variation      25295.6  temps calcul   0.101548 s
+iteration     3  variation      20610.9  temps calcul    0.09444 s
+iteration     4  variation        17763  temps calcul  0.0982257 s
+iteration     5  variation      15827.5  temps calcul  0.0965586 s
+iteration     6  variation      14415.8  temps calcul  0.0991404 s
+iteration     7  variation      13330.9  temps calcul  0.0927958 s
+iteration     8  variation      12464.5  temps calcul  0.0922859 s
+iteration     9  variation      11751.7  temps calcul  0.0961916 s
 
-             temps total     4.85244 s
+             temps total     4.33594 s
 
 
 OpenMP Coarse Grain Computation using 5 thread(s)
@@ -243,70 +133,20 @@ It. max :  10
 Dt :       6.21887e-07
 
 
-  temps init     0.519029 s
+  temps init     0.523811 s
 
-0x7ffee2679fe0 0x7ffee267a078 4
-0x7ffee2679fe0 0x7ffee267a078 2
-0x7ffee2679fe0 0x7ffee267a078 3
-0x7ffee2679fe0 0x7ffee267a078 1
-0x7ffee2679fe0 0x7ffee267a078 0
-iteration     0  variation      60001.3  temps calcul          0 s
-0x7ffee2679fe0 0x7ffee267a078 4
-0x7ffee2679fe0 0x7ffee267a078 3
-0x7ffee2679fe0 0x7ffee267a078 2
-0x7ffee2679fe0 0x7ffee267a078 1
-0x7ffee2679fe0 0x7ffee267a078 0
-iteration     1  variation        34083  temps calcul   0.347663 s
-0x7ffee2679fe0 0x7ffee267a078 4
-0x7ffee2679fe0 0x7ffee267a078 2
-0x7ffee2679fe0 0x7ffee267a078 3
-0x7ffee2679fe0 0x7ffee267a078 1
-0x7ffee2679fe0 0x7ffee267a078 0
-iteration     2  variation      25295.6  temps calcul          0 s
-0x7ffee2679fe0 0x7ffee267a078 4
-0x7ffee2679fe0 0x7ffee267a078 2
-0x7ffee2679fe0 0x7ffee267a078 3
-0x7ffee2679fe0 0x7ffee267a078 1
-0x7ffee2679fe0 0x7ffee267a078 0
-iteration     3  variation      20610.9  temps calcul   0.344641 s
-0x7ffee2679fe0 0x7ffee267a078 4
-0x7ffee2679fe0 0x7ffee267a078 3
-0x7ffee2679fe0 0x7ffee267a078 2
-0x7ffee2679fe0 0x7ffee267a078 1
-0x7ffee2679fe0 0x7ffee267a078 0
-iteration     4  variation        17763  temps calcul          0 s
-0x7ffee2679fe0 0x7ffee267a078 4
-0x7ffee2679fe0 0x7ffee267a078 2
-0x7ffee2679fe0 0x7ffee267a078 3
-0x7ffee2679fe0 0x7ffee267a078 1
-0x7ffee2679fe0 0x7ffee267a078 0
-iteration     5  variation      15827.5  temps calcul          0 s
-0x7ffee2679fe0 0x7ffee267a078 4
-0x7ffee2679fe0 0x7ffee267a078 2
-0x7ffee2679fe0 0x7ffee267a078 3
-0x7ffee2679fe0 0x7ffee267a078 1
-0x7ffee2679fe0 0x7ffee267a078 0
-iteration     6  variation      14415.8  temps calcul   0.338557 s
-0x7ffee2679fe0 0x7ffee267a078 4
-0x7ffee2679fe0 0x7ffee267a078 2
-0x7ffee2679fe0 0x7ffee267a078 3
-0x7ffee2679fe0 0x7ffee267a078 1
-0x7ffee2679fe0 0x7ffee267a078 0
-iteration     7  variation      13330.9  temps calcul          0 s
-0x7ffee2679fe0 0x7ffee267a078 4
-0x7ffee2679fe0 0x7ffee267a078 3
-0x7ffee2679fe0 0x7ffee267a078 2
-0x7ffee2679fe0 0x7ffee267a078 1
-0x7ffee2679fe0 0x7ffee267a078 0
-iteration     8  variation      12464.5  temps calcul   0.338049 s
-0x7ffee2679fe0 0x7ffee267a078 4
-0x7ffee2679fe0 0x7ffee267a078 3
-0x7ffee2679fe0 0x7ffee267a078 2
-0x7ffee2679fe0 0x7ffee267a078 1
-0x7ffee2679fe0 0x7ffee267a078 0
-iteration     9  variation      11751.7  temps calcul   0.335503 s
+iteration     0  variation      60001.3  temps calcul   0.106738 s
+iteration     1  variation        34083  temps calcul  0.0833843 s
+iteration     2  variation      25295.6  temps calcul  0.0850379 s
+iteration     3  variation      20610.9  temps calcul  0.0837016 s
+iteration     4  variation        17763  temps calcul  0.0825832 s
+iteration     5  variation      15827.5  temps calcul  0.0831781 s
+iteration     6  variation      14415.8  temps calcul   0.083331 s
+iteration     7  variation      13330.9  temps calcul  0.0830571 s
+iteration     8  variation      12464.5  temps calcul  0.0829515 s
+iteration     9  variation      11751.7  temps calcul  0.0825041 s
 
-             temps total     3.93099 s
+             temps total     3.65236 s
 
 
 OpenMP Coarse Grain Computation using 6 thread(s)
@@ -318,80 +158,20 @@ It. max :  10
 Dt :       6.21887e-07
 
 
-  temps init     0.533019 s
+  temps init     0.547536 s
 
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 3
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 4
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 2
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 5
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 1
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 0
-iteration     0  variation      60001.3  temps calcul          0 s
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 3
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 2
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 5
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 4
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 1
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 0
-iteration     1  variation        34083  temps calcul          0 s
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 5
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 3
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 4
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 2
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 1
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 0
-iteration     2  variation      25295.6  temps calcul   0.284724 s
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 5
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 4
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 3
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 2
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 1
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 0
-iteration     3  variation      20610.9  temps calcul   0.282575 s
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 5
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 3
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 4
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 2
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 1
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 0
-iteration     4  variation        17763  temps calcul          0 s
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 4
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 3
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 5
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 2
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 1
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 0
-iteration     5  variation      15827.5  temps calcul          0 s
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 4
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 5
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 2
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 3
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 1
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 0
-iteration     6  variation      14415.8  temps calcul          0 s
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 3
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 2
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 4
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 5
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 1
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 0
-iteration     7  variation      13330.9  temps calcul   0.284663 s
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 4
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 3
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 2
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 5
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 1
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 0
-iteration     8  variation      12464.5  temps calcul          0 s
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 2
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 3
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 4
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 5
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 1
-0x7ffd9e8c0fc0 0x7ffd9e8c1058 0
-iteration     9  variation      11751.7  temps calcul   0.282683 s
+iteration     0  variation      60001.3  temps calcul  0.0768739 s
+iteration     1  variation        34083  temps calcul  0.0813495 s
+iteration     2  variation      25295.6  temps calcul  0.0824825 s
+iteration     3  variation      20610.9  temps calcul  0.0809711 s
+iteration     4  variation        17763  temps calcul   0.082287 s
+iteration     5  variation      15827.5  temps calcul  0.0818696 s
+iteration     6  variation      14415.8  temps calcul  0.0822525 s
+iteration     7  variation      13330.9  temps calcul  0.0838831 s
+iteration     8  variation      12464.5  temps calcul  0.0829064 s
+iteration     9  variation      11751.7  temps calcul  0.0846243 s
 
-             temps total     3.44908 s
+             temps total      3.2765 s
 
 
 OpenMP Coarse Grain Computation using 7 thread(s)
@@ -403,90 +183,20 @@ It. max :  10
 Dt :       6.21887e-07
 
 
-  temps init     0.500769 s
+  temps init     0.531523 s
 
-0x7ffc9fc58d60 0x7ffc9fc58df8 6
-0x7ffc9fc58d60 0x7ffc9fc58df8 3
-0x7ffc9fc58d60 0x7ffc9fc58df8 4
-0x7ffc9fc58d60 0x7ffc9fc58df8 2
-0x7ffc9fc58d60 0x7ffc9fc58df8 5
-0x7ffc9fc58d60 0x7ffc9fc58df8 1
-0x7ffc9fc58d60 0x7ffc9fc58df8 0
-iteration     0  variation      60001.3  temps calcul          0 s
-0x7ffc9fc58d60 0x7ffc9fc58df8 6
-0x7ffc9fc58d60 0x7ffc9fc58df8 3
-0x7ffc9fc58d60 0x7ffc9fc58df8 2
-0x7ffc9fc58d60 0x7ffc9fc58df8 5
-0x7ffc9fc58d60 0x7ffc9fc58df8 4
-0x7ffc9fc58d60 0x7ffc9fc58df8 0
-0x7ffc9fc58d60 0x7ffc9fc58df8 1
-iteration     1  variation            0  temps calcul          0 s
-0x7ffc9fc58d60 0x7ffc9fc58df8 6
-0x7ffc9fc58d60 0x7ffc9fc58df8 3
-0x7ffc9fc58d60 0x7ffc9fc58df8 2
-0x7ffc9fc58d60 0x7ffc9fc58df8 5
-0x7ffc9fc58d60 0x7ffc9fc58df8 4
-0x7ffc9fc58d60 0x7ffc9fc58df8 0
-0x7ffc9fc58d60 0x7ffc9fc58df8 1
-iteration     2  variation            0  temps calcul          0 s
-0x7ffc9fc58d60 0x7ffc9fc58df8 6
-0x7ffc9fc58d60 0x7ffc9fc58df8 3
-0x7ffc9fc58d60 0x7ffc9fc58df8 2
-0x7ffc9fc58d60 0x7ffc9fc58df8 5
-0x7ffc9fc58d60 0x7ffc9fc58df8 4
-0x7ffc9fc58d60 0x7ffc9fc58df8 0
-0x7ffc9fc58d60 0x7ffc9fc58df8 1
-iteration     3  variation            0  temps calcul  2.472e-06 s
-0x7ffc9fc58d60 0x7ffc9fc58df8 3
-0x7ffc9fc58d60 0x7ffc9fc58df8 2
-0x7ffc9fc58d60 0x7ffc9fc58df8 6
-0x7ffc9fc58d60 0x7ffc9fc58df8 4
-0x7ffc9fc58d60 0x7ffc9fc58df8 5
-0x7ffc9fc58d60 0x7ffc9fc58df8 0
-0x7ffc9fc58d60 0x7ffc9fc58df8 1
-iteration     4  variation            0  temps calcul   4.93e-07 s
-0x7ffc9fc58d60 0x7ffc9fc58df8 6
-0x7ffc9fc58d60 0x7ffc9fc58df8 3
-0x7ffc9fc58d60 0x7ffc9fc58df8 2
-0x7ffc9fc58d60 0x7ffc9fc58df8 4
-0x7ffc9fc58d60 0x7ffc9fc58df8 5
-0x7ffc9fc58d60 0x7ffc9fc58df8 0
-0x7ffc9fc58d60 0x7ffc9fc58df8 1
-iteration     5  variation            0  temps calcul          0 s
-0x7ffc9fc58d60 0x7ffc9fc58df8 6
-0x7ffc9fc58d60 0x7ffc9fc58df8 3
-0x7ffc9fc58d60 0x7ffc9fc58df8 2
-0x7ffc9fc58d60 0x7ffc9fc58df8 5
-0x7ffc9fc58d60 0x7ffc9fc58df8 4
-0x7ffc9fc58d60 0x7ffc9fc58df8 0
-0x7ffc9fc58d60 0x7ffc9fc58df8 1
-iteration     6  variation            0  temps calcul          0 s
-0x7ffc9fc58d60 0x7ffc9fc58df8 6
-0x7ffc9fc58d60 0x7ffc9fc58df8 3
-0x7ffc9fc58d60 0x7ffc9fc58df8 2
-0x7ffc9fc58d60 0x7ffc9fc58df8 5
-0x7ffc9fc58d60 0x7ffc9fc58df8 4
-0x7ffc9fc58d60 0x7ffc9fc58df8 0
-0x7ffc9fc58d60 0x7ffc9fc58df8 1
-iteration     7  variation            0  temps calcul          0 s
-0x7ffc9fc58d60 0x7ffc9fc58df8 6
-0x7ffc9fc58d60 0x7ffc9fc58df8 4
-0x7ffc9fc58d60 0x7ffc9fc58df8 3
-0x7ffc9fc58d60 0x7ffc9fc58df8 2
-0x7ffc9fc58d60 0x7ffc9fc58df8 5
-0x7ffc9fc58d60 0x7ffc9fc58df8 1
-0x7ffc9fc58d60 0x7ffc9fc58df8 0
-iteration     8  variation      12556.2  temps calcul          0 s
-0x7ffc9fc58d60 0x7ffc9fc58df8 6
-0x7ffc9fc58d60 0x7ffc9fc58df8 4
-0x7ffc9fc58d60 0x7ffc9fc58df8 3
-0x7ffc9fc58d60 0x7ffc9fc58df8 2
-0x7ffc9fc58d60 0x7ffc9fc58df8 5
-0x7ffc9fc58d60 0x7ffc9fc58df8 1
-0x7ffc9fc58d60 0x7ffc9fc58df8 0
-iteration     9  variation      11826.3  temps calcul   0.298229 s
+iteration     0  variation      60001.3  temps calcul  0.0712941 s
+iteration     1  variation        34083  temps calcul  0.0715035 s
+iteration     2  variation      25295.6  temps calcul  0.0714699 s
+iteration     3  variation      20610.9  temps calcul  0.0701325 s
+iteration     4  variation        17763  temps calcul  0.0694887 s
+iteration     5  variation      15827.5  temps calcul  0.0689668 s
+iteration     6  variation      14415.8  temps calcul  0.0714815 s
+iteration     7  variation      13330.9  temps calcul  0.0722278 s
+iteration     8  variation      12464.5  temps calcul  0.0712027 s
+iteration     9  variation      11751.7  temps calcul  0.0719412 s
 
-             temps total     3.50139 s
+             temps total     3.22758 s
 
 
 OpenMP Coarse Grain Computation using 8 thread(s)
@@ -498,98 +208,26 @@ It. max :  10
 Dt :       6.21887e-07
 
 
-  temps init     0.506723 s
+  temps init     0.531442 s
 
-0x7ffef310b8b0 0x7ffef310b948 6
-0x7ffef310b8b0 0x7ffef310b948 3
-0x7ffef310b8b0 0x7ffef310b948 4
-0x7ffef310b8b0 0x7ffef310b948 7
-0x7ffef310b8b0 0x7ffef310b948 5
-0x7ffef310b8b0 0x7ffef310b948 2
-0x7ffef310b8b0 0x7ffef310b948 1
-0x7ffef310b8b0 0x7ffef310b948 0
-iteration     0  variation            0  temps calcul          0 s
-0x7ffef310b8b0 0x7ffef310b948 6
-0x7ffef310b8b0 0x7ffef310b948 3
-0x7ffef310b8b0 0x7ffef310b948 7
-0x7ffef310b8b0 0x7ffef310b948 4
-0x7ffef310b8b0 0x7ffef310b948 5
-0x7ffef310b8b0 0x7ffef310b948 2
-0x7ffef310b8b0 0x7ffef310b948 1
-0x7ffef310b8b0 0x7ffef310b948 0
-iteration     1  variation            0  temps calcul          0 s
-0x7ffef310b8b0 0x7ffef310b948 6
-0x7ffef310b8b0 0x7ffef310b948 3
-0x7ffef310b8b0 0x7ffef310b948 4
-0x7ffef310b8b0 0x7ffef310b948 7
-0x7ffef310b8b0 0x7ffef310b948 5
-0x7ffef310b8b0 0x7ffef310b948 2
-0x7ffef310b8b0 0x7ffef310b948 1
-0x7ffef310b8b0 0x7ffef310b948 0
-iteration     2  variation      25295.6  temps calcul          0 s
-0x7ffef310b8b0 0x7ffef310b948 6
-0x7ffef310b8b0 0x7ffef310b948 3
-0x7ffef310b8b0 0x7ffef310b948 4
-0x7ffef310b8b0 0x7ffef310b948 7
-0x7ffef310b8b0 0x7ffef310b948 5
-0x7ffef310b8b0 0x7ffef310b948 2
-0x7ffef310b8b0 0x7ffef310b948 1
-0x7ffef310b8b0 0x7ffef310b948 0
-iteration     3  variation      20610.9  temps calcul          0 s
-0x7ffef310b8b0 0x7ffef310b948 4
-0x7ffef310b8b0 0x7ffef310b948 3
-0x7ffef310b8b0 0x7ffef310b948 6
-0x7ffef310b8b0 0x7ffef310b948 7
-0x7ffef310b8b0 0x7ffef310b948 5
-0x7ffef310b8b0 0x7ffef310b948 2
-0x7ffef310b8b0 0x7ffef310b948 1
-0x7ffef310b8b0 0x7ffef310b948 0
-iteration     4  variation        17763  temps calcul          0 s
-0x7ffef310b8b0 0x7ffef310b948 4
-0x7ffef310b8b0 0x7ffef310b948 6
-0x7ffef310b8b0 0x7ffef310b948 3
-0x7ffef310b8b0 0x7ffef310b948 7
-0x7ffef310b8b0 0x7ffef310b948 5
-0x7ffef310b8b0 0x7ffef310b948 2
-0x7ffef310b8b0 0x7ffef310b948 1
-0x7ffef310b8b0 0x7ffef310b948 0
-iteration     5  variation      15827.5  temps calcul          0 s
-0x7ffef310b8b0 0x7ffef310b948 4
-0x7ffef310b8b0 0x7ffef310b948 3
-0x7ffef310b8b0 0x7ffef310b948 6
-0x7ffef310b8b0 0x7ffef310b948 7
-0x7ffef310b8b0 0x7ffef310b948 5
-0x7ffef310b8b0 0x7ffef310b948 2
-0x7ffef310b8b0 0x7ffef310b948 1
-0x7ffef310b8b0 0x7ffef310b948 0
-iteration     6  variation      14415.8  temps calcul          0 s
-0x7ffef310b8b0 0x7ffef310b948 6
-0x7ffef310b8b0 0x7ffef310b948 3
-0x7ffef310b8b0 0x7ffef310b948 4
-0x7ffef310b8b0 0x7ffef310b948 7
-0x7ffef310b8b0 0x7ffef310b948 5
-0x7ffef310b8b0 0x7ffef310b948 2
-0x7ffef310b8b0 0x7ffef310b948 1
-0x7ffef310b8b0 0x7ffef310b948 0
-iteration     7  variation      13330.9  temps calcul          0 s
-0x7ffef310b8b0 0x7ffef310b948 3
-0x7ffef310b8b0 0x7ffef310b948 6
-0x7ffef310b8b0 0x7ffef310b948 7
-0x7ffef310b8b0 0x7ffef310b948 5
-0x7ffef310b8b0 0x7ffef310b948 4
-0x7ffef310b8b0 0x7ffef310b948 2
-0x7ffef310b8b0 0x7ffef310b948 0
-0x7ffef310b8b0 0x7ffef310b948 1
-iteration     8  variation      12487.7  temps calcul          0 s
-0x7ffef310b8b0 0x7ffef310b948 6
-0x7ffef310b8b0 0x7ffef310b948 3
-0x7ffef310b8b0 0x7ffef310b948 7
-0x7ffef310b8b0 0x7ffef310b948 5
-0x7ffef310b8b0 0x7ffef310b948 4
-0x7ffef310b8b0 0x7ffef310b948 2
-0x7ffef310b8b0 0x7ffef310b948 0
-0x7ffef310b8b0 0x7ffef310b948 1
-iteration     9  variation      11764.1  temps calcul   0.268567 s
+iteration     0  variation      60001.3  temps calcul  0.0707416 s
+iteration     1  variation        34083  temps calcul  0.0718079 s
+iteration     2  variation      25295.6  temps calcul  0.0709683 s
+iteration     3  variation      20610.9  temps calcul  0.0707203 s
+iteration     4  variation        17763  temps calcul  0.0708523 s
+iteration     5  variation      15827.5  temps calcul  0.0710096 s
+iteration     6  variation      14415.8  temps calcul   0.070979 s
+iteration     7  variation      13330.9  temps calcul  0.0720971 s
+iteration     8  variation      12464.5  temps calcul  0.0662243 s
+iteration     9  variation      11751.7  temps calcul  0.0662993 s
 
-             temps total     3.20616 s
+             temps total      2.9315 s
+
+
+last diff (sequential) =    11751.700
+
+threads   :           1           2           3           4           5           6           7           8
+temps     :       7.615       5.594       5.088       4.336       3.652       3.276       3.228       2.932
+speedups  :       1.028       1.400       1.539       1.806       2.144       2.390       2.426       2.672
+last diff :   11751.700   11751.700   11751.700   11751.700   11751.700   11751.700   11751.700   11751.700
 

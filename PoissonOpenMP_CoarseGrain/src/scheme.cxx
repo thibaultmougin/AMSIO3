@@ -41,7 +41,6 @@ bool Scheme::iteration()
 {
 
 
-  m_duv=0.;
   int imin, imax;
 
   imin = m_P.imin(0);
@@ -54,6 +53,9 @@ bool Scheme::iteration()
     imin = m_P.startIndex(iTh);
     imax = m_P.endIndex(iTh);
   #endif
+  
+  m_duv=0.;
+  #pragma omp barrier
   m_duv += iteration_domaine(
       imin, imax,
       m_P.imin(1), m_P.imax(1),

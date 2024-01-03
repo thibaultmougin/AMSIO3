@@ -14,6 +14,10 @@ string
 vector
 -
 
+/home/tmougin/cours/AMSIO3/TP1_incomplet/PoissonOpenMP_CoarseGrain/src/common/os.hxx
+sys/stat.h
+-
+
 /home/tmougin/cours/AMSIO3/TP1_incomplet/PoissonOpenMP_CoarseGrain/src/common/timer.hxx
 string
 -
@@ -28,8 +32,28 @@ sys/time.h
 chrono
 -
 
-/home/tmougin/cours/AMSIO3/TP1_incomplet/PoissonOpenMP_CoarseGrain/src/force.hxx
+/home/tmougin/cours/AMSIO3/TP1_incomplet/PoissonOpenMP_CoarseGrain/src/main.cxx
+iostream
+-
+fstream
+-
+sstream
+-
+iomanip
+-
 cmath
+-
+parameters.hxx
+/home/tmougin/cours/AMSIO3/TP1_incomplet/PoissonOpenMP_CoarseGrain/src/parameters.hxx
+values.hxx
+/home/tmougin/cours/AMSIO3/TP1_incomplet/PoissonOpenMP_CoarseGrain/src/values.hxx
+scheme.hxx
+/home/tmougin/cours/AMSIO3/TP1_incomplet/PoissonOpenMP_CoarseGrain/src/scheme.hxx
+timer.hxx
+/home/tmougin/cours/AMSIO3/TP1_incomplet/PoissonOpenMP_CoarseGrain/src/timer.hxx
+os.hxx
+/home/tmougin/cours/AMSIO3/TP1_incomplet/PoissonOpenMP_CoarseGrain/src/os.hxx
+omp.h
 -
 
 /home/tmougin/cours/AMSIO3/TP1_incomplet/PoissonOpenMP_CoarseGrain/src/parameters.hxx
@@ -46,26 +70,6 @@ functional
 arguments.hxx
 /home/tmougin/cours/AMSIO3/TP1_incomplet/PoissonOpenMP_CoarseGrain/src/arguments.hxx
 
-/home/tmougin/cours/AMSIO3/TP1_incomplet/PoissonOpenMP_CoarseGrain/src/scheme.cxx
-scheme.hxx
-/home/tmougin/cours/AMSIO3/TP1_incomplet/PoissonOpenMP_CoarseGrain/src/scheme.hxx
-parameters.hxx
-/home/tmougin/cours/AMSIO3/TP1_incomplet/PoissonOpenMP_CoarseGrain/src/parameters.hxx
-version.hxx
-/home/tmougin/cours/AMSIO3/TP1_incomplet/PoissonOpenMP_CoarseGrain/src/version.hxx
-force.hxx
-/home/tmougin/cours/AMSIO3/TP1_incomplet/PoissonOpenMP_CoarseGrain/src/force.hxx
-cmath
--
-timer.hxx
-/home/tmougin/cours/AMSIO3/TP1_incomplet/PoissonOpenMP_CoarseGrain/src/timer.hxx
-sstream
--
-iomanip
--
-omp.h
--
-
 /home/tmougin/cours/AMSIO3/TP1_incomplet/PoissonOpenMP_CoarseGrain/src/scheme.hxx
 values.hxx
 /home/tmougin/cours/AMSIO3/TP1_incomplet/PoissonOpenMP_CoarseGrain/src/values.hxx
@@ -79,6 +83,4 @@ vector
 -
 iostream
 -
-
-version.hxx
 
