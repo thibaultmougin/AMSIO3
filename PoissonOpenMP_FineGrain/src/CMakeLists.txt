@@ -12,6 +12,7 @@ find_package(OpenMP REQUIRED)
 
 if (${CMAKE_BUILD_TYPE} STREQUAL "Debug")
   add_compile_options(-DDEBUG)
+
 endif()
 
 include_directories(

@@ -14,11 +14,9 @@ string
 vector
 -
 
-/home/tmougin/cours/AMSIO3/TP1_incomplet/PoissonOpenMP_FineGrain/src/common/os.hxx
-sys/stat.h
+/home/tmougin/cours/AMSIO3/TP1_incomplet/PoissonOpenMP_FineGrain/src/force.hxx
+cmath
 -
-
-/home/tmougin/cours/AMSIO3/TP1_incomplet/PoissonOpenMP_FineGrain/src/cond_ini.hxx
 
 /home/tmougin/cours/AMSIO3/TP1_incomplet/PoissonOpenMP_FineGrain/src/parameters.hxx
 iostream
@@ -32,23 +30,27 @@ functional
 arguments.hxx
 /home/tmougin/cours/AMSIO3/TP1_incomplet/PoissonOpenMP_FineGrain/src/arguments.hxx
 
-/home/tmougin/cours/AMSIO3/TP1_incomplet/PoissonOpenMP_FineGrain/src/values.cxx
-values.hxx
-/home/tmougin/cours/AMSIO3/TP1_incomplet/PoissonOpenMP_FineGrain/src/values.hxx
-os.hxx
-/home/tmougin/cours/AMSIO3/TP1_incomplet/PoissonOpenMP_FineGrain/src/os.hxx
-fstream
+/home/tmougin/cours/AMSIO3/TP1_incomplet/PoissonOpenMP_FineGrain/src/scheme.cxx
+scheme.hxx
+/home/tmougin/cours/AMSIO3/TP1_incomplet/PoissonOpenMP_FineGrain/src/scheme.hxx
+parameters.hxx
+/home/tmougin/cours/AMSIO3/TP1_incomplet/PoissonOpenMP_FineGrain/src/parameters.hxx
+version.hxx
+/home/tmougin/cours/AMSIO3/TP1_incomplet/PoissonOpenMP_FineGrain/src/version.hxx
+force.hxx
+/home/tmougin/cours/AMSIO3/TP1_incomplet/PoissonOpenMP_FineGrain/src/force.hxx
+cmath
 -
 sstream
 -
 iomanip
 -
-cstdlib
--
-cstring
--
-cond_ini.hxx
-/home/tmougin/cours/AMSIO3/TP1_incomplet/PoissonOpenMP_FineGrain/src/cond_ini.hxx
+
+/home/tmougin/cours/AMSIO3/TP1_incomplet/PoissonOpenMP_FineGrain/src/scheme.hxx
+values.hxx
+/home/tmougin/cours/AMSIO3/TP1_incomplet/PoissonOpenMP_FineGrain/src/values.hxx
+parameters.hxx
+/home/tmougin/cours/AMSIO3/TP1_incomplet/PoissonOpenMP_FineGrain/src/parameters.hxx
 
 /home/tmougin/cours/AMSIO3/TP1_incomplet/PoissonOpenMP_FineGrain/src/values.hxx
 parameters.hxx
@@ -57,4 +59,6 @@ vector
 -
 iostream
 -
+
+version.hxx
 

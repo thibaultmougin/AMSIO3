@@ -7,6 +7,9 @@
 #include "timer.hxx"
 #include <sstream>
 #include <iomanip>
+#if defined(_OPENMP)
+   #include <omp.h>
+#endif
 
 Scheme::Scheme(Parameters &P) :
     codeName(version), m_P(P), m_u(P), m_v(P)  {

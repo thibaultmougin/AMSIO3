@@ -9,6 +9,9 @@
 #include "scheme.hxx"
 #include "timer.hxx"
 #include "os.hxx"
+#if defined(_OPENMP)
+   #include <omp.h>
+#endif
 
 int main(int argc, char *argv[])
 {
@@ -45,7 +48,8 @@ int main(int argc, char *argv[])
             << T_init.elapsed() << " s\n" << std::endl;
 
   double T_previous;
-
+  #pragma omp parallel default(shared)
+  {
   for (int it = 0; it < itMax; it++)
   {
     if (freq > 0 && it % freq == 0)
@@ -99,6 +103,6 @@ int main(int argc, char *argv[])
   f << id << " " << T_total.elapsed()
           << " " << T_calcul.elapsed()
           << " " << C.variation() << std::endl;
-
+  }
   return 0;
 }

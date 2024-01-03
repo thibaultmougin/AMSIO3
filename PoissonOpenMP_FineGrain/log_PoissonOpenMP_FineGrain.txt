@@ -8,20 +8,20 @@ It. max :  10
 Dt :       6.21887e-07
 
 
-  temps init     0.549571 s
+  temps init     0.595352 s
 
-iteration     0  variation      60001.3  temps calcul   0.749263 s
-iteration     1  variation        34083  temps calcul   0.792878 s
-iteration     2  variation      25295.6  temps calcul   0.850998 s
-iteration     3  variation      20610.9  temps calcul   0.842723 s
-iteration     4  variation        17763  temps calcul   0.766092 s
-iteration     5  variation      15827.5  temps calcul   0.741726 s
-iteration     6  variation      14415.8  temps calcul    0.75745 s
-iteration     7  variation      13330.9  temps calcul   0.738698 s
-iteration     8  variation      12464.5  temps calcul   0.748061 s
-iteration     9  variation      11751.7  temps calcul   0.757331 s
+iteration     0  variation      60001.3  temps calcul   0.867654 s
+iteration     1  variation        34083  temps calcul   0.768988 s
+iteration     2  variation      25295.6  temps calcul   0.737867 s
+iteration     3  variation      20610.9  temps calcul   0.726362 s
+iteration     4  variation        17763  temps calcul   0.727807 s
+iteration     5  variation      15827.5  temps calcul   0.728414 s
+iteration     6  variation      14415.8  temps calcul   0.730397 s
+iteration     7  variation      13330.9  temps calcul   0.746739 s
+iteration     8  variation      12464.5  temps calcul   0.773521 s
+iteration     9  variation      11751.7  temps calcul   0.729216 s
 
-             temps total     8.29508 s
+             temps total      8.1326 s
 
 
 OpenMP Fine Grain Computation using 1 thread(s)
@@ -33,20 +33,20 @@ It. max :  10
 Dt :       6.21887e-07
 
 
-  temps init      0.66955 s
+  temps init     0.651961 s
 
-iteration     0  variation            0  temps calcul   0.706796 s
-iteration     1  variation            0  temps calcul   0.699357 s
-iteration     2  variation            0  temps calcul   0.711668 s
-iteration     3  variation            0  temps calcul   0.713063 s
-iteration     4  variation            0  temps calcul   0.708322 s
-iteration     5  variation            0  temps calcul   0.684688 s
-iteration     6  variation            0  temps calcul   0.678795 s
-iteration     7  variation            0  temps calcul    0.70874 s
-iteration     8  variation            0  temps calcul   0.718137 s
-iteration     9  variation            0  temps calcul   0.713065 s
+iteration     0  variation            0  temps calcul   0.735198 s
+iteration     1  variation            0  temps calcul   0.706528 s
+iteration     2  variation            0  temps calcul   0.694108 s
+iteration     3  variation            0  temps calcul   0.707621 s
+iteration     4  variation            0  temps calcul   0.732382 s
+iteration     5  variation            0  temps calcul   0.706772 s
+iteration     6  variation            0  temps calcul   0.706747 s
+iteration     7  variation            0  temps calcul   0.701071 s
+iteration     8  variation            0  temps calcul   0.692725 s
+iteration     9  variation            0  temps calcul   0.698598 s
 
-             temps total     7.71244 s
+             temps total     7.73398 s
 
 
 OpenMP Fine Grain Computation using 2 thread(s)
@@ -58,20 +58,20 @@ It. max :  10
 Dt :       6.21887e-07
 
 
-  temps init     0.526806 s
+  temps init     0.523702 s
 
-iteration     0  variation            0  temps calcul   0.546094 s
-iteration     1  variation            0  temps calcul   0.563588 s
-iteration     2  variation            0  temps calcul   0.596249 s
-iteration     3  variation            0  temps calcul   0.558025 s
-iteration     4  variation            0  temps calcul   0.558846 s
-iteration     5  variation            0  temps calcul   0.540942 s
-iteration     6  variation            0  temps calcul   0.543705 s
-iteration     7  variation            0  temps calcul   0.543044 s
-iteration     8  variation            0  temps calcul   0.607229 s
-iteration     9  variation            0  temps calcul   0.615479 s
+iteration     0  variation            0  temps calcul   0.557438 s
+iteration     1  variation            0  temps calcul    0.55914 s
+iteration     2  variation            0  temps calcul   0.557309 s
+iteration     3  variation            0  temps calcul   0.557184 s
+iteration     4  variation            0  temps calcul   0.560125 s
+iteration     5  variation            0  temps calcul   0.556417 s
+iteration     6  variation            0  temps calcul   0.557478 s
+iteration     7  variation            0  temps calcul   0.564623 s
+iteration     8  variation            0  temps calcul   0.589835 s
+iteration     9  variation            0  temps calcul    0.64521 s
 
-             temps total     6.20029 s
+             temps total     6.22871 s
 
 
 OpenMP Fine Grain Computation using 3 thread(s)
@@ -83,20 +83,20 @@ It. max :  10
 Dt :       6.21887e-07
 
 
-  temps init     0.514201 s
+  temps init     0.508206 s
 
-iteration     0  variation            0  temps calcul   0.504562 s
-iteration     1  variation            0  temps calcul   0.519385 s
-iteration     2  variation            0  temps calcul   0.506132 s
-iteration     3  variation            0  temps calcul    0.49897 s
-iteration     4  variation            0  temps calcul   0.497115 s
-iteration     5  variation            0  temps calcul   0.499751 s
-iteration     6  variation            0  temps calcul   0.504125 s
-iteration     7  variation            0  temps calcul   0.503208 s
-iteration     8  variation            0  temps calcul   0.504165 s
-iteration     9  variation            0  temps calcul   0.512817 s
+iteration     0  variation            0  temps calcul   0.510329 s
+iteration     1  variation            0  temps calcul   0.524445 s
+iteration     2  variation            0  temps calcul   0.512607 s
+iteration     3  variation            0  temps calcul   0.506844 s
+iteration     4  variation            0  temps calcul   0.503532 s
+iteration     5  variation            0  temps calcul   0.504201 s
+iteration     6  variation            0  temps calcul   0.508212 s
+iteration     7  variation            0  temps calcul   0.506124 s
+iteration     8  variation            0  temps calcul   0.505511 s
+iteration     9  variation            0  temps calcul   0.505639 s
 
-             temps total     5.56471 s
+             temps total     5.59592 s
 
 
 OpenMP Fine Grain Computation using 4 thread(s)
@@ -108,20 +108,20 @@ It. max :  10
 Dt :       6.21887e-07
 
 
-  temps init     0.480671 s
+  temps init     0.470546 s
 
-iteration     0  variation            0  temps calcul   0.411817 s
-iteration     1  variation            0  temps calcul     0.4184 s
-iteration     2  variation            0  temps calcul   0.413645 s
-iteration     3  variation            0  temps calcul   0.409553 s
-iteration     4  variation            0  temps calcul   0.410377 s
-iteration     5  variation            0  temps calcul   0.409828 s
-iteration     6  variation            0  temps calcul   0.409042 s
-iteration     7  variation            0  temps calcul   0.412949 s
-iteration     8  variation            0  temps calcul   0.410034 s
-iteration     9  variation            0  temps calcul   0.408916 s
+iteration     0  variation            0  temps calcul   0.417043 s
+iteration     1  variation            0  temps calcul   0.424918 s
+iteration     2  variation            0  temps calcul   0.418101 s
+iteration     3  variation            0  temps calcul   0.415381 s
+iteration     4  variation            0  temps calcul    0.41282 s
+iteration     5  variation            0  temps calcul   0.417471 s
+iteration     6  variation            0  temps calcul   0.419478 s
+iteration     7  variation            0  temps calcul   0.415532 s
+iteration     8  variation            0  temps calcul   0.417645 s
+iteration     9  variation            0  temps calcul   0.413008 s
 
-             temps total     4.59548 s
+             temps total      4.6422 s
 
 
 OpenMP Fine Grain Computation using 5 thread(s)
@@ -133,20 +133,20 @@ It. max :  10
 Dt :       6.21887e-07
 
 
-  temps init     0.476584 s
+  temps init     0.501722 s
 
-iteration     0  variation            0  temps calcul   0.336449 s
-iteration     1  variation            0  temps calcul   0.332809 s
-iteration     2  variation            0  temps calcul   0.347507 s
-iteration     3  variation            0  temps calcul   0.341038 s
-iteration     4  variation            0  temps calcul   0.336996 s
-iteration     5  variation            0  temps calcul   0.330682 s
-iteration     6  variation            0  temps calcul   0.332419 s
-iteration     7  variation            0  temps calcul   0.329579 s
-iteration     8  variation            0  temps calcul     0.3307 s
-iteration     9  variation            0  temps calcul   0.331736 s
+iteration     0  variation            0  temps calcul   0.366007 s
+iteration     1  variation            0  temps calcul   0.332313 s
+iteration     2  variation            0  temps calcul   0.347383 s
+iteration     3  variation            0  temps calcul    0.34193 s
+iteration     4  variation            0  temps calcul   0.336117 s
+iteration     5  variation            0  temps calcul   0.334316 s
+iteration     6  variation            0  temps calcul   0.336782 s
+iteration     7  variation            0  temps calcul   0.335278 s
+iteration     8  variation            0  temps calcul   0.334588 s
+iteration     9  variation            0  temps calcul   0.331883 s
 
-             temps total     3.82676 s
+             temps total     3.89857 s
 
 
 OpenMP Fine Grain Computation using 6 thread(s)
@@ -158,20 +158,20 @@ It. max :  10
 Dt :       6.21887e-07
 
 
-  temps init     0.492533 s
+  temps init     0.481643 s
 
-iteration     0  variation            0  temps calcul    0.30561 s
-iteration     1  variation            0  temps calcul   0.280363 s
-iteration     2  variation            0  temps calcul   0.289942 s
-iteration     3  variation            0  temps calcul   0.280487 s
-iteration     4  variation            0  temps calcul   0.277607 s
-iteration     5  variation            0  temps calcul   0.280638 s
-iteration     6  variation            0  temps calcul   0.280975 s
-iteration     7  variation            0  temps calcul   0.285639 s
-iteration     8  variation            0  temps calcul    0.28023 s
-iteration     9  variation            0  temps calcul   0.289243 s
+iteration     0  variation            0  temps calcul   0.322524 s
+iteration     1  variation            0  temps calcul   0.281749 s
+iteration     2  variation            0  temps calcul   0.282551 s
+iteration     3  variation            0  temps calcul   0.281525 s
+iteration     4  variation            0  temps calcul   0.281778 s
+iteration     5  variation            0  temps calcul   0.282944 s
+iteration     6  variation            0  temps calcul   0.294967 s
+iteration     7  variation            0  temps calcul   0.286605 s
+iteration     8  variation            0  temps calcul   0.283096 s
+iteration     9  variation            0  temps calcul   0.281443 s
 
-             temps total     3.34352 s
+             temps total     3.36111 s
 
 
 OpenMP Fine Grain Computation using 7 thread(s)
@@ -183,20 +183,20 @@ It. max :  10
 Dt :       6.21887e-07
 
 
-  temps init     0.485579 s
+  temps init     0.482178 s
 
-iteration     0  variation            0  temps calcul   0.282761 s
-iteration     1  variation            0  temps calcul   0.282416 s
-iteration     2  variation            0  temps calcul   0.281392 s
-iteration     3  variation            0  temps calcul   0.281664 s
-iteration     4  variation            0  temps calcul   0.282926 s
-iteration     5  variation            0  temps calcul   0.281402 s
-iteration     6  variation            0  temps calcul   0.281501 s
-iteration     7  variation            0  temps calcul   0.282306 s
-iteration     8  variation            0  temps calcul    0.29111 s
-iteration     9  variation            0  temps calcul    0.28294 s
+iteration     0  variation            0  temps calcul   0.285052 s
+iteration     1  variation            0  temps calcul   0.282735 s
+iteration     2  variation            0  temps calcul   0.289878 s
+iteration     3  variation            0  temps calcul   0.283778 s
+iteration     4  variation            0  temps calcul   0.284303 s
+iteration     5  variation            0  temps calcul   0.283019 s
+iteration     6  variation            0  temps calcul   0.309488 s
+iteration     7  variation            0  temps calcul   0.315138 s
+iteration     8  variation            0  temps calcul   0.314138 s
+iteration     9  variation            0  temps calcul   0.303524 s
 
-             temps total     3.31624 s
+             temps total     3.43349 s
 
 
 OpenMP Fine Grain Computation using 8 thread(s)
@@ -208,18 +208,26 @@ It. max :  10
 Dt :       6.21887e-07
 
 
-  temps init     0.482151 s
+  temps init     0.486217 s
 
-iteration     0  variation            0  temps calcul   0.251587 s
-iteration     1  variation            0  temps calcul   0.280863 s
-iteration     2  variation            0  temps calcul   0.251473 s
-iteration     3  variation            0  temps calcul   0.254327 s
-iteration     4  variation            0  temps calcul   0.249022 s
-iteration     5  variation            0  temps calcul   0.248899 s
-iteration     6  variation            0  temps calcul   0.246898 s
-iteration     7  variation            0  temps calcul   0.252256 s
-iteration     8  variation            0  temps calcul     0.2486 s
-iteration     9  variation            0  temps calcul   0.249015 s
+iteration     0  variation            0  temps calcul   0.272811 s
+iteration     1  variation            0  temps calcul   0.265807 s
+iteration     2  variation            0  temps calcul   0.263883 s
+iteration     3  variation            0  temps calcul   0.262716 s
+iteration     4  variation            0  temps calcul   0.255004 s
+iteration     5  variation            0  temps calcul   0.256277 s
+iteration     6  variation            0  temps calcul   0.251051 s
+iteration     7  variation            0  temps calcul   0.249434 s
+iteration     8  variation            0  temps calcul   0.249698 s
+iteration     9  variation            0  temps calcul   0.249479 s
 
-             temps total     3.01536 s
+             temps total     3.06266 s
+
+
+last diff (sequential) =    11751.700
+
+threads   :           1           2           3           4           5           6           7           8
+temps     :       7.734       6.229       5.596       4.642       3.899       3.361       3.433       3.063
+speedups  :       1.052       1.306       1.453       1.752       2.086       2.420       2.369       2.655
+last diff :       0.000       0.000       0.000       0.000       0.000       0.000       0.000       0.000
 
