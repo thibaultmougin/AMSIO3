@@ -7,7 +7,7 @@
 #endif
 
 #if defined(_OPENMP)
-   #include <omp.h>
+#include <omp.h>
 #endif
 
 #include "os.hxx"
@@ -26,55 +26,58 @@
 
 #include "timer.hxx"
 #include "version.hxx"
-void stime(char * buffer, int size)
+void stime(char *buffer, int size)
 {
   time_t curtime;
   struct tm *loctime;
 
   /* Get the current time. */
-  curtime = time (NULL);
+  curtime = time(NULL);
 
   /* Convert it to local time representation. */
 
-  loctime = localtime (&curtime);
+  loctime = localtime(&curtime);
   strftime(buffer, size, "%F_%Hh%Mm%Ss", loctime);
-
 }
 
-Parameters::Parameters(int argc, char ** argv) : Arguments(argc, argv)
+Parameters::Parameters(int argc, char **argv) : Arguments(argc, argv)
 {
   m_command = argv[0];
   m_help = Get("h", 0) || Get("help", 0);
 
-  if (m_help) return;
+  if (m_help)
+    return;
 
 #if defined(_OPENMP)
   m_nthreads = Get("threads", 0);
 
-  if (m_nthreads<1) {
-    const char * omp_var = std::getenv("OMP_NUM_THREADS");
-    if (omp_var) m_nthreads = strtol(omp_var, NULL, 10);
+  if (m_nthreads < 1)
+  {
+    const char *omp_var = std::getenv("OMP_NUM_THREADS");
+    if (omp_var)
+      m_nthreads = strtol(omp_var, NULL, 10);
     m_nthreads = Get("threads", m_nthreads);
   }
 
-  if (m_nthreads<1)
-    m_nthreads=1;
+  if (m_nthreads < 1)
+    m_nthreads = 1;
 
   omp_set_num_threads(m_nthreads);
 #endif
 
   m_n[0] = Get("n", -1);
-  if (m_n[0] == -1) {
+  if (m_n[0] == -1)
+  {
     m_n[0] = Get("n0", 401);
     m_n[1] = Get("n1", 401);
     m_n[2] = Get("n2", 401);
   }
-  else {
+  else
+  {
     m_n[1] = m_n[0];
     m_n[2] = m_n[1];
   }
   m_itmax = Get("it", 10);
-
 
 #if defined(_OPENMP)
   m_nBalances = Get("balances", 0);
@@ -82,17 +85,20 @@ Parameters::Parameters(int argc, char ** argv) : Arguments(argc, argv)
 #endif
 
   double d;
-  double dt_max = 0.1/(m_n[0]*m_n[0]);
-  d = 0.1/(m_n[1]*m_n[1]);
-  if (dt_max > d) dt_max = d;
-  d = 0.1/(m_n[2]*m_n[2]);
-  if (dt_max > d) dt_max = d;
- 
+  double dt_max = 0.1 / (m_n[0] * m_n[0]);
+  d = 0.1 / (m_n[1] * m_n[1]);
+  if (dt_max > d)
+    dt_max = d;
+  d = 0.1 / (m_n[2] * m_n[2]);
+  if (dt_max > d)
+    dt_max = d;
+
   m_dt = Get("dt", dt_max);
   m_freq = Get("out", 0);
-  
-  if (!m_help) {
- 
+
+  if (!m_help)
+  {
+
     m_path = "results";
     mkdir_p(m_path.c_str());
 
@@ -100,12 +106,13 @@ Parameters::Parameters(int argc, char ** argv) : Arguments(argc, argv)
       std::cerr << "Warning : provided dt (" << m_dt
                 << ") is greater then the recommended maximum (" << dt_max
                 << ")" << std::endl;
-    
-    for (int i=0; i<3; i++) {
+
+    for (int i = 0; i < 3; i++)
+    {
       m_xmin[i] = 0.0;
-      m_dx[i] = m_n[i]>1 ? 1.0/(m_n[i]-1) : 0.0;
+      m_dx[i] = m_n[i] > 1 ? 1.0 / (m_n[i] - 1) : 0.0;
       m_imin[i] = 1;
-      m_imax[i] = m_n[i]-2;
+      m_imax[i] = m_n[i] - 2;
       m_xmax[i] = 1.0;
     }
   }
@@ -113,7 +120,8 @@ Parameters::Parameters(int argc, char ** argv) : Arguments(argc, argv)
 
 bool Parameters::help()
 {
-  if (m_help) {
+  if (m_help)
+  {
     std::cerr << "Usage : " << version << " list of options>\n\n";
     std::cerr << "Options:\n\n"
               << "-h|--help       : display this message\n"
@@ -133,7 +141,7 @@ bool Parameters::help()
   return m_help;
 }
 
-std::ostream & operator<<(std::ostream &f, const Parameters & p)
+std::ostream &operator<<(std::ostream &f, const Parameters &p)
 {
 #ifdef _OPENMP
   f << "\nOpenMP Coarse Grain Computation using " << p.nthreads() << " thread(s)\n\n";
@@ -168,58 +176,59 @@ void Parameters::nthreads(int n)
 
   int k;
 
-  int dn = (m_n[0]-1) / n;
+  int dn = (m_n[0] - 1) / n;
   m_startIndex[0] = 1;
   m_endIndex[0] = dn;
 
-  for (k = 1; k < n; k++) {
-    m_startIndex[k] = m_endIndex[k-1] + 1;
+  for (k = 1; k < n; k++)
+  {
+    m_startIndex[k] = m_endIndex[k - 1] + 1;
     m_endIndex[k] = m_startIndex[k] + dn;
   }
-  m_endIndex[n-1] = m_n[0]-2;
+  m_endIndex[n - 1] = m_n[0] - 2;
 
-  m_times_lines.resize(m_n[0]-1);
-  for (k=1; k<m_n[0]-1; k++)
+  m_times_lines.resize(m_n[0] - 1);
+  for (k = 1; k < m_n[0] - 1; k++)
     m_times_lines[k] = 0.0;
 }
 
 void Parameters::balance()
 {
-  /*if (!m_balanceOn)
+  if (!m_balanceOn)
     return;
-  */
   double t_total = 0.0, t_mean;
   int k;
 
-  for (k = 1; k < m_n[0]-1; k++)
-        t_total += m_times_lines[k];
+  for (k = 1; k < m_n[0] - 1; k++)
+  {
+    t_total += m_times_lines[k];
+    //std::cout << k << " : " << m_times_lines[k] << "total : " << t_total << std::endl;
+  }
+  t_mean = t_total / m_nthreads;
+  std::cout << "mean : " << t_mean << "total : " << t_total << std::endl;
+  k = 0;
+  m_startIndex[0] = 1;
+  for (int it = 0; it < m_nthreads - 1; it++)
+  {
+    double t = 0;
+    for (; k < m_n[0] - 1; k++)
+      if (t < t_mean)
+        t += m_times_lines[k];
+      else
+      {
+        m_endIndex[it] = k;
+        break;
+      }
+    m_startIndex[it + 1] = m_endIndex[it] + 1;
+  }
+  m_endIndex[m_nthreads - 1] = m_n[0] - 2;
 
-    t_mean = t_total / m_nthreads;
-
-    k = 0;
-    m_startIndex[0] = 1;
-    for (int it = 0; it < m_nthreads-1; it++)
-    {
-        double t = 0;
-        for (; k < m_n[0]-1; k++)
-            if (t < t_mean)
-                t += m_times_lines[k];
-            else
-            {
-                m_endIndex[it] = k;
-                break;
-            }
-        m_startIndex[it+1] = m_endIndex[it] + 1;
-    }
-    m_endIndex[m_nthreads-1] = m_n[0]-2;
-
-    std::cerr << std::endl;
-    for (k = 0; k < m_nthreads; k++)
-        std::cerr << "thread " << k << ": " 
-                  << m_startIndex[k] << " - " << m_endIndex[k] 
-                  << " (" << m_endIndex[k] - m_startIndex[k] + 1 << " lines)" 
-                  << std::endl;
-    std::cerr << std::endl;
+  std::cerr << std::endl;
+  for (k = 0; k < m_nthreads; k++)
+    std::cerr << "thread " << k << ": "
+              << m_startIndex[k] << " - " << m_endIndex[k]
+              << " (" << m_endIndex[k] - m_startIndex[k] + 1 << " lines)"
+              << std::endl;
+  std::cerr << std::endl;
 }
 #endif
-

@@ -8,11 +8,11 @@
 #include <sstream>
 #include <iomanip>
 #if defined(_OPENMP)
-   #include <omp.h>
+#include <omp.h>
 #endif
 
-Scheme::Scheme(Parameters &P) :
-    codeName(version), m_P(P), m_u(P), m_v(P)  {
+Scheme::Scheme(Parameters &P) : codeName(version), m_P(P), m_u(P), m_v(P)
+{
 
   m_t = 0.0;
   m_duv = 0.0;
@@ -40,34 +40,32 @@ double Scheme::present()
 bool Scheme::iteration()
 {
 
-
   int imin, imax;
 
   imin = m_P.imin(0);
   imax = m_P.imax(0);
 
   int iTh = 0;
-  #ifdef _OPENMP
-    iTh = omp_get_thread_num();
-    //std::cout << iTh << " " << m_P.startIndex(iTh) << " " << m_P.endIndex(iTh) << std::endl;
-    imin = m_P.startIndex(iTh);
-    imax = m_P.endIndex(iTh);
-  #endif
-  
-  m_duv=0.;
-  #pragma omp barrier
-  m_duv += iteration_domaine(
-      imin, imax,
-      m_P.imin(1), m_P.imax(1),
-      m_P.imin(2), m_P.imax(2));
+#ifdef _OPENMP
+  iTh = omp_get_thread_num();
+  // std::cout << iTh << " " << m_P.startIndex(iTh) << " " << m_P.endIndex(iTh) << std::endl;
+  m_P.activateBalance(true);
+  imin = m_P.startIndex(iTh);
+  imax = m_P.endIndex(iTh);
+#endif
+
+  m_duv = 0.;
+#pragma omp barrier
+  m_duv += iteration_domaine(imin, imax,
+                             m_P.imin(1), m_P.imax(1),
+                             m_P.imin(2), m_P.imax(2));
 
   m_t += m_dt;
-  //std::cout << &m_u << " " << &m_v << " " << iTh << std::endl;
-  #pragma omp master
+  // std::cout << &m_u << " " << &m_v << " " << iTh << std::endl;
+
+#pragma omp master
   m_u.swap(m_v);
 
-
-  
   return true;
 }
 
@@ -83,16 +81,24 @@ double Scheme::iteration_domaine(int imin, int imax,
   double zmin = m_xmin[2];
   int i, j, k;
   double du, du1, du2, du_sum = 0.0;
-  
+  #ifdef _OPENMP
+  Timer &T_i = GetTimer(4);
+  double T_last_i;
+  T_i.reinit();
+  #endif
   double x, y, z;
-
   for (i = imin; i <= imax; i++)
-    for (j = jmin; j <= jmax; j++)
-      for (k = kmin; k <= kmax; k++) {
+  {
+    #ifdef _OPENMP
 
-        du1 = (-2 * m_u(i, j, k) + m_u(i + 1, j, k) + m_u(i - 1, j, k)) * lam_x
-            + (-2 * m_u(i, j, k) + m_u(i, j + 1, k) + m_u(i, j - 1, k)) * lam_y
-            + (-2 * m_u(i, j, k) + m_u(i, j, k + 1) + m_u(i, j, k - 1)) * lam_z;
+    T_i.start();
+    #endif
+    for (j = jmin; j <= jmax; j++)
+    {
+      for (k = kmin; k <= kmax; k++)
+      {
+
+        du1 = (-2 * m_u(i, j, k) + m_u(i + 1, j, k) + m_u(i - 1, j, k)) * lam_x + (-2 * m_u(i, j, k) + m_u(i, j + 1, k) + m_u(i, j - 1, k)) * lam_y + (-2 * m_u(i, j, k) + m_u(i, j, k + 1) + m_u(i, j, k - 1)) * lam_z;
 
         x = xmin + i * m_dx[0];
         y = ymin + j * m_dx[1];
@@ -104,18 +110,29 @@ double Scheme::iteration_domaine(int imin, int imax,
 
         du_sum += du > 0 ? du : -du;
       }
-  //std::cout << du_sum << std::endl;
-  return du_sum; 
+    }
+#ifdef _OPENMP
+    T_i.stop();
+
+    m_P.setTime(i, T_i.elapsed() - T_last_i);
+    T_last_i = T_i.elapsed();
+    //std::cout << m_P.time(i) << std::endl;
+#endif
+  }
+#ifdef _OPENMP
+  T_i.stop();
+#endif
+
+  return du_sum;
 }
 
-const Values & Scheme::getOutput()
+const Values &Scheme::getOutput()
 {
   return m_u;
 }
 
-void Scheme::setInput(const Values & u)
+void Scheme::setInput(const Values &u)
 {
   m_u = u;
   m_v = u;
 }
-

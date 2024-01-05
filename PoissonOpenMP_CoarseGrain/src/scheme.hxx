@@ -11,7 +11,8 @@
 #include "values.hxx"
 #include "parameters.hxx"
 
-class Scheme {
+class Scheme
+{
 
 public:
   Scheme(Parameters &P);
@@ -22,8 +23,8 @@ public:
   bool iteration();
   double variation() { return m_duv; }
 
-  const Values & getOutput();
-  void setInput(const Values & u);
+  const Values &getOutput();
+  void setInput(const Values &u);
 
   std::string codeName;
 
@@ -33,7 +34,7 @@ protected:
   double m_dx[3];
   double m_xmin[3];
 
-  double iteration_domaine(int imin, int imax, 
+  double iteration_domaine(int imin, int imax,
                            int jmin, int jmax,
                            int kmin, int kmax);
 

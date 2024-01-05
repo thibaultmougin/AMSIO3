@@ -38,7 +38,7 @@ public:
   int startIndex(int k) const { return m_startIndex[k]; }
   int endIndex(int k) const { return m_endIndex[k]; }
   double & time(int i) { return m_times_lines[i]; }
-
+  void setTime(int i, double val){m_times_lines[i]=val;}
   int nBalances() { return m_nBalances; }
   void balance();
   void activateBalance(bool flag) {m_balanceOn = flag; }
