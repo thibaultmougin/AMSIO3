@@ -55,14 +55,14 @@ bool Scheme::iteration()
 #endif
 
   m_duv = 0.;
-#pragma omp barrier
+//#pragma omp barrier
   m_duv += iteration_domaine(imin, imax,
                              m_P.imin(1), m_P.imax(1),
                              m_P.imin(2), m_P.imax(2));
 
   m_t += m_dt;
   // std::cout << &m_u << " " << &m_v << " " << iTh << std::endl;
-
+#pragma omp barrier
 #pragma omp master
   m_u.swap(m_v);
 
