@@ -205,7 +205,7 @@ void Parameters::balance()
     //std::cout << k << " : " << m_times_lines[k] << "total : " << t_total << std::endl;
   }
   t_mean = t_total / m_nthreads;
-  std::cout << "mean : " << t_mean << "total : " << t_total << std::endl;
+  //std::cout << "mean : " << t_mean << "total : " << t_total << std::endl;
   k = 0;
   m_startIndex[0] = 1;
   for (int it = 0; it < m_nthreads - 1; it++)

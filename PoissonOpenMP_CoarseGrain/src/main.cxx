@@ -70,7 +70,9 @@ int main(int argc, char *argv[])
       T_calcul.stop();
 
 #ifdef _OPENMP
-      Prm.activateBalance(true);
+      Prm.activateBalance(true); 
+      //Prm.activateBalance(false); 
+
 #pragma omp master
       Prm.balance();
 #endif 
