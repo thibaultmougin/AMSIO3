@@ -1,0 +1,25 @@
+
+Sequential Computation
+
+Internal domain :   [0.0025, 0.9975] x [0.0025, 0.9975] x [0.0025, 0.9975]
+Point indices   :   [1 ... 399] x [1 ... 399] x [1 ... 399]
+
+It. max :  10
+Dt :       6.21887e-07
+
+
+  temps init     0.550389 s
+
+iteration     0  variation      60001.3  temps calcul   0.766307 s
+iteration     1  variation        34083  temps calcul   0.795244 s
+iteration     2  variation      25295.6  temps calcul   0.758472 s
+iteration     3  variation      20610.9  temps calcul   0.751935 s
+iteration     4  variation        17763  temps calcul   0.743281 s
+iteration     5  variation      15827.5  temps calcul   0.727865 s
+iteration     6  variation      14415.8  temps calcul   0.733153 s
+iteration     7  variation      13330.9  temps calcul   0.729641 s
+iteration     8  variation      12464.5  temps calcul   0.739206 s
+iteration     9  variation      11751.7  temps calcul   0.738403 s
+
+             temps total     8.03417 s
+
