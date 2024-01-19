@@ -1,1 +1,0 @@
-/home/tmougin/cours/AMSIO3/TP/TP2/PoissonMPI_OpenMP/install/./PoissonMPI_OpenMP
