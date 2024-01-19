@@ -153,10 +153,10 @@ def collectHybrid(version):
    for f in listFiles:
      with open(f) as fIn:
        l = fIn.readline().split()
-       np[i] = int(l[0])
-       th[i] = int(l[1])
+       np[i] = int(float(l[0]))
+       th[i] = int(float(l[1]))
        t[i] = float(l[2])
-       r[i] = float(l[4])
+       r[i] = float(l[3])
        i+=1
 
    for i in range(len(t)):
