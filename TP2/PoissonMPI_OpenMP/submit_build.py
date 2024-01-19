@@ -31,7 +31,7 @@ module load intel_compiler/19.1.3.304
 module load intel_mpi/2019.9
 
 ## execution
-/mnt/beegfs/softs/intel/intelpython3/bin/python -u ./build.py -c intel
+/mnt/beegfs/softs/intel/intelpython3/bin/python ./build.py -c intel
 
 '''
 

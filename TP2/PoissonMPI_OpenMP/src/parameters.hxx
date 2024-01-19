@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
 #include <memory>
 #include <functional>
 #include <mpi.h>
@@ -40,31 +41,17 @@ public:
   int neighbour(int i) const { return m_neighbour[i]; }
   MPI_Comm & comm() const { return m_comm; }
   
-#ifdef _OPENMP
-
-  int nthreads() const { return m_nthreads; }
-  void nthreads(int n) { m_nthreads = n; }
-
-#endif
-  
 private:
 
   std::string m_command;
 
-#ifdef _OPENMP
-  int m_nthreads;
-#endif
-
-  int m_n[3];
+  int m_n_global[3], m_n[3];
   double m_xmin[3], m_xmax[3], m_dx[3];
-  int m_imin[3], m_imax[3];
-
-  int m_n_global[3];
-  int , m_imin_global[3], m_imax_global[3];
+  int m_imin[3], m_imax[3], m_imin_global[3], m_imax_global[3];
 
   int m_itmax;
   double m_dt;
-  
+
   int m_freq;
 
   std::string m_path;

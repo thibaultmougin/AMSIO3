@@ -6,12 +6,6 @@
 #include <unistd.h>
 #endif
 
-#include <mpi.h>
-
-#if defined(_OPENMP)
-   #include <omp.h>
-#endif
-
 #include "os.hxx"
 #include "arguments.hxx"
 #include "parameters.hxx"
@@ -25,6 +19,7 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <time.h>
+#include <mpi.h>
 
 #include "timer.hxx"
 #include "version.hxx"
@@ -195,10 +190,9 @@ std::ostream & operator<<(std::ostream &f, const Parameters & p)
   std::string message = s.str();
 
   if (p.rank() == 0) {
-    f << "Processes : " << p.size() << "\n"
-      << "Threads   : " << p.nthreads() << " thread(s)\n\n";
-      << "It. max   : " << p.itmax() << "\n"
-      << "Dt        : " << p.dt() << "\n" << std::endl;
+    f << "Processes :" << p.size() << "\n"
+      << "It. max :  " << p.itmax() << "\n"
+      << "Dt :       " << p.dt() << "\n" << std::endl;
   }
   MPI_Barrier(p.comm());
 
