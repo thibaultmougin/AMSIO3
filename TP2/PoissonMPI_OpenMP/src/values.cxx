@@ -3,6 +3,9 @@
 #include <fstream>
 #include <sstream>
 #include <iomanip>
+#if defined(_OPENMP)
+   #include <omp.h>
+#endif
 #include <cstdlib>
 #include <cstring>
 #include "cond_ini.hxx"
@@ -37,7 +40,9 @@ void Values::init()
 {
   int i, j, k;
   double x, y, z;
-
+#ifdef _OPENMP
+#pragma omp parallel for private(i,j,k,x,y,z) collapse(3)
+#endif
   for (i=m_imin[0]; i<=m_imax[0]; i++)
     for (j=m_imin[1]; j<=m_imax[1]; j++)
       for (k=m_imin[2]; k<=m_imax[2]; k++) {
