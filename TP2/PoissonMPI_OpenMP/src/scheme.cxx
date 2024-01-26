@@ -2,7 +2,7 @@
 #include "parameters.hxx"
 #include "version.hxx"
 #include "force.hxx"
-#include <omp.h>
+
 #include <cmath>
 #include <mpi.h>
 #include <sstream>
@@ -63,10 +63,13 @@ double Scheme::iteration_domaine(int imin, int imax,
   
   double x, y, z;
 
-#pragma omp parallel for private(du1, du2, du, i, j, k, x, y, z) default(shared) reduction(+:du_sum)
+#ifdef _OPENMP
+#pragma omp parallel for private(du1, du2, du, i, j, k, x, y, z) default(shared) reduction(+:du_sum_local)
+#endif
   for (i = imin; i <= imax; i++)
     for (j = jmin; j <= jmax; j++)
       for (k = kmin; k <= kmax; k++) {
+
         du1 = (-2 * m_u(i, j, k) + m_u(i + 1, j, k) + m_u(i - 1, j, k)) * lam_x
             + (-2 * m_u(i, j, k) + m_u(i, j + 1, k) + m_u(i, j - 1, k)) * lam_y
             + (-2 * m_u(i, j, k) + m_u(i, j, k + 1) + m_u(i, j, k - 1)) * lam_z;

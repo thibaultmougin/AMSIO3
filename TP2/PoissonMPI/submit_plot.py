@@ -4,4 +4,4 @@
 import subprocess
 
 
-subprocess.call(['/mnt/beegfs/softs/intel/intelpython3/bin/python', 'plot.py'])
+subprocess.call(['python3', 'plot.py'])

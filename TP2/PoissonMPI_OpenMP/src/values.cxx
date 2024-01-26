@@ -3,9 +3,6 @@
 #include <fstream>
 #include <sstream>
 #include <iomanip>
-#if defined(_OPENMP)
-   #include <omp.h>
-#endif
 #include <cstdlib>
 #include <cstring>
 #include "cond_ini.hxx"

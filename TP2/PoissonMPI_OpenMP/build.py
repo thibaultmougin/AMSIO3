@@ -42,8 +42,8 @@ def manage():
   srcDir = os.path.join(baseDir, 'src')
 
   print (' '.join(['\nbuild ', args.type, '\n']), file=sys.stderr)
-  buildDir = os.path.join(baseDir, 'build')
-  installDir = os.path.join(baseDir, 'install')
+  buildDir = os.path.join(baseDir, 'build', args.compiler)
+  installDir = os.path.join(baseDir, 'install', args.compiler)
 
   cmake_params = ['-DCMAKE_BUILD_TYPE=' + args.type]
   cmake_params.append('-DCMAKE_INSTALL_PREFIX=' + installDir)

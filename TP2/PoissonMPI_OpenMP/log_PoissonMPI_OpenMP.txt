@@ -1,4 +1,4 @@
-Processes :1
+Thread(s) :1
 It. max :  10
 Dt :       6.21887e-07
 
@@ -6,22 +6,22 @@ Process 0
   Internal domain :   [0.0025, 0.9975] x [0.0025, 0.9975] x [0.0025, 0.9975]
   Point indices   :   [1 ... 399] x [1 ... 399] x [1 ... 399]
 
-  temps init     0.417827 s
+  temps init     0.489592 s
 
-iteration     0  variation      60005.3  temps calcul    1.60837 s  comm.  0.0023768 s
-iteration     1  variation        34087  temps calcul    1.67739 s  comm.  0.0020311 s
-iteration     2  variation      25299.5  temps calcul    1.67737 s  comm.  0.0019803 s
-iteration     3  variation      20614.9  temps calcul    1.58716 s  comm.   0.001862 s
-iteration     4  variation      17766.9  temps calcul     1.5731 s  comm.  0.0030619 s
-iteration     5  variation      15831.4  temps calcul    1.54791 s  comm.  0.0019171 s
-iteration     6  variation      14419.7  temps calcul    1.58783 s  comm.  0.0026904 s
-iteration     7  variation      13334.8  temps calcul    1.59584 s  comm.  0.0019232 s
-iteration     8  variation      12468.4  temps calcul    1.68428 s  comm.  0.0021561 s
-iteration     9  variation      11755.6  temps calcul    1.91383 s  comm.  0.0024314 s
+iteration     0  variation      60005.3  temps calcul     1.5238 s  comm.  0.0019931 s
+iteration     1  variation        34087  temps calcul    1.58555 s  comm.  0.0021622 s
+iteration     2  variation      25299.5  temps calcul    1.54807 s  comm.  0.0028292 s
+iteration     3  variation      20614.9  temps calcul     1.5125 s  comm.   0.002851 s
+iteration     4  variation      17766.9  temps calcul    1.51254 s  comm.  0.0020124 s
+iteration     5  variation      15831.4  temps calcul    1.58126 s  comm.  0.0019707 s
+iteration     6  variation      14419.7  temps calcul    1.51241 s  comm.  0.0019516 s
+iteration     7  variation      13334.8  temps calcul    1.55217 s  comm.  0.0019449 s
+iteration     8  variation      12468.4  temps calcul    1.55176 s  comm.  0.0021912 s
+iteration     9  variation      11755.6  temps calcul    1.52529 s  comm.  0.0022045 s
 
-             temps total      17.168 s
+             temps total     16.1906 s
 
-Processes :1
+Thread(s) :8
 It. max :  10
 Dt :       6.21887e-07
 
@@ -29,22 +29,22 @@ Process 0
   Internal domain :   [0.0025, 0.9975] x [0.0025, 0.9975] x [0.0025, 0.9975]
   Point indices   :   [1 ... 399] x [1 ... 399] x [1 ... 399]
 
-  temps init     0.501482 s
+  temps init     0.301818 s
 
-iteration     0  variation      60005.3  temps calcul    2.11267 s  comm.  0.0029302 s
-iteration     1  variation        34087  temps calcul    1.63478 s  comm.  0.0022033 s
-iteration     2  variation      25299.5  temps calcul    1.55661 s  comm.   0.002408 s
-iteration     3  variation      20614.9  temps calcul    1.58865 s  comm.  0.0018944 s
-iteration     4  variation      17766.9  temps calcul    1.56101 s  comm.  0.0018413 s
-iteration     5  variation      15831.4  temps calcul    1.58257 s  comm.  0.0020724 s
-iteration     6  variation      14419.7  temps calcul     1.5496 s  comm.  0.0024659 s
-iteration     7  variation      13334.8  temps calcul    1.54994 s  comm.   0.001992 s
-iteration     8  variation      12468.4  temps calcul    1.55617 s  comm.  0.0032744 s
-iteration     9  variation      11755.6  temps calcul    1.62336 s  comm.  0.0018152 s
+iteration     0  variation      60005.3  temps calcul   0.779979 s  comm.  0.0021951 s
+iteration     1  variation        34087  temps calcul   0.771655 s  comm.  0.0019219 s
+iteration     2  variation      25299.5  temps calcul   0.777038 s  comm.  0.0021681 s
+iteration     3  variation      20614.9  temps calcul   0.782633 s  comm.  0.0021495 s
+iteration     4  variation      17766.9  temps calcul   0.782649 s  comm.  0.0022268 s
+iteration     5  variation      15831.4  temps calcul   0.776601 s  comm.  0.0020934 s
+iteration     6  variation      14419.7  temps calcul   0.798884 s  comm.  0.0020214 s
+iteration     7  variation      13334.8  temps calcul   0.773436 s  comm.  0.0018959 s
+iteration     8  variation      12468.4  temps calcul   0.815926 s  comm.  0.0020016 s
+iteration     9  variation      11755.6  temps calcul   0.791354 s  comm.  0.0023748 s
 
-             temps total     17.1173 s
+             temps total     8.44475 s
 
-Processes :2
+Thread(s) :4
 It. max :  10
 Dt :       6.21887e-07
 
@@ -55,22 +55,22 @@ Process 1
   Internal domain :   [0.5, 0.9975] x [0.0025, 0.9975] x [0.0025, 0.9975]
   Point indices   :   [200 ... 399] x [1 ... 399] x [1 ... 399]
 
-  temps init     0.381546 s
+  temps init     0.248424 s
 
-iteration     0  variation      60005.3  temps calcul    0.90498 s  comm.  0.0023851 s
-iteration     1  variation        34087  temps calcul    0.91194 s  comm.  0.0013178 s
-iteration     2  variation      25299.5  temps calcul   0.968312 s  comm.   0.002875 s
-iteration     3  variation      20614.9  temps calcul   0.879206 s  comm.   0.000957 s
-iteration     4  variation      17766.9  temps calcul   0.865483 s  comm.  0.0016612 s
-iteration     5  variation      15831.4  temps calcul   0.873525 s  comm.  0.0010083 s
-iteration     6  variation      14419.7  temps calcul   0.878121 s  comm.  0.0011071 s
-iteration     7  variation      13334.8  temps calcul   0.877887 s  comm.  0.0043749 s
-iteration     8  variation      12468.4  temps calcul   0.877886 s  comm.   0.002241 s
-iteration     9  variation      11755.6  temps calcul   0.911617 s  comm.  0.0010004 s
+iteration     0  variation      60005.3  temps calcul   0.531348 s  comm.   0.003081 s
+iteration     1  variation        34087  temps calcul     0.4934 s  comm.  0.0016759 s
+iteration     2  variation      25299.5  temps calcul   0.520315 s  comm.  0.0016416 s
+iteration     3  variation      20614.9  temps calcul   0.505823 s  comm.  0.0011659 s
+iteration     4  variation      17766.9  temps calcul   0.487553 s  comm.  0.0013998 s
+iteration     5  variation      15831.4  temps calcul   0.526135 s  comm.  0.0010992 s
+iteration     6  variation      14419.7  temps calcul   0.506268 s  comm.  0.0010479 s
+iteration     7  variation      13334.8  temps calcul   0.531909 s  comm.  0.0012154 s
+iteration     8  variation      12468.4  temps calcul   0.487872 s  comm.   0.001011 s
+iteration     9  variation      11755.6  temps calcul   0.484387 s  comm.  0.0011738 s
 
-             temps total     9.64082 s
+             temps total     5.61645 s
 
-Processes :4
+Thread(s) :2
 It. max :  10
 Dt :       6.21887e-07
 
@@ -87,26 +87,26 @@ Process 3
   Internal domain :   [0.745, 0.9975] x [0.0025, 0.9975] x [0.0025, 0.9975]
   Point indices   :   [298 ... 399] x [1 ... 399] x [1 ... 399]
 
-  temps init     0.267999 s
+  temps init     0.234761 s
 
-iteration     0  variation      60005.3  temps calcul   0.550324 s  comm.  0.0024127 s
-iteration     1  variation        34087  temps calcul   0.558729 s  comm.  0.0036847 s
-iteration     2  variation      25299.5  temps calcul   0.519683 s  comm.  0.0045953 s
-iteration     3  variation      20614.9  temps calcul   0.570453 s  comm.  0.0012592 s
-iteration     4  variation      17766.9  temps calcul   0.517753 s  comm.  0.0016842 s
-iteration     5  variation      15831.4  temps calcul   0.575085 s  comm.  0.0015624 s
-iteration     6  variation      14419.7  temps calcul   0.541415 s  comm.  0.0012449 s
-iteration     7  variation      13334.8  temps calcul    0.57671 s  comm.  0.0016897 s
-iteration     8  variation      12468.4  temps calcul    0.53777 s  comm.  0.0026246 s
-iteration     9  variation      11755.6  temps calcul   0.505295 s  comm.  0.0028984 s
+iteration     0  variation      60005.3  temps calcul   0.355705 s  comm. 0.00262831 s
+iteration     1  variation        34087  temps calcul   0.367538 s  comm.  0.0014898 s
+iteration     2  variation      25299.5  temps calcul   0.377789 s  comm.  0.0021308 s
+iteration     3  variation      20614.9  temps calcul   0.367837 s  comm.  0.0014058 s
+iteration     4  variation      17766.9  temps calcul   0.369302 s  comm.  0.0016847 s
+iteration     5  variation      15831.4  temps calcul   0.360884 s  comm.  0.0011665 s
+iteration     6  variation      14419.7  temps calcul   0.357853 s  comm.  0.0018867 s
+iteration     7  variation      13334.8  temps calcul   0.363687 s  comm.  0.0017405 s
+iteration     8  variation      12468.4  temps calcul   0.369703 s  comm.  0.0014766 s
+iteration     9  variation      11755.6  temps calcul   0.357345 s  comm.  0.0014993 s
 
-             temps total     6.04647 s
+             temps total     4.18636 s
 
 --------------------------------------------------------------------------
 There are not enough slots available in the system to satisfy the 8
 slots that were requested by the application:
 
-  /home/tmougin/cours/TP-AMSIO3/TP2/PoissonMPI_OpenMP/install/PoissonMPI_OpenMP
+  install/gnu/PoissonMPI_OpenMP
 
 Either request fewer slots for your application, or make more slots
 available for use.
@@ -133,15 +133,8 @@ launch.
 --------------------------------------------------------------------------
 
 processes :           1           2           4
-threads   :          17           9           6
-temps     :      16.315       8.949       5.453
-speedups  :       1.000       1.823       2.992
-last diff :   11755.559   11755.559   11755.559
-
-
-processes :           1           2           4
-threads   :          17           9           6
-temps     :      16.315       8.949       5.453
-speedups  :       1.000       1.823       2.992
+threads   :           8           5           4
+temps     :       7.850       5.075       3.648
+speedups  :       1.000       1.547       2.152
 last diff :   11755.559   11755.559   11755.559
 

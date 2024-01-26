@@ -6,7 +6,6 @@
 #include <unistd.h>
 #endif
 
-
 #include "os.hxx"
 #include "arguments.hxx"
 #include "parameters.hxx"
@@ -21,6 +20,10 @@
 #include <fcntl.h>
 #include <time.h>
 #include <mpi.h>
+
+#if defined(_OPENMP)
+   #include <omp.h>
+#endif
 
 #include "timer.hxx"
 #include "version.hxx"
@@ -76,6 +79,21 @@ Parameters::Parameters(int argc, char ** argv, int size, int rank)
   }
    
   T_comm.stop();
+
+#if defined(_OPENMP)
+  m_nthreads = Get("threads", -1);
+
+  if (m_nthreads == -1) {
+    const char * omp_var = std::getenv("OMP_NUM_THREADS");
+    if (omp_var) 
+      m_nthreads = strtol(omp_var, NULL, 10);
+    else
+      m_nthreads = 1;
+  }
+  omp_set_num_threads(m_nthreads);
+#else
+  m_nthreads = 1;
+#endif
 
   m_n_global[0] = Get("n", -1);
   if (m_n_global[0] == -1) {
@@ -135,16 +153,19 @@ Parameters::Parameters(int argc, char ** argv, int size, int rank)
 bool Parameters::help()
 {
   if (m_rank == 0 && m_help) {
-    std::cerr << "Usage : ./PoissonMPI <list of options>\n\n";
+    std::cerr << "Usage : ./PoissonMPI_OpenMP <list of options>\n\n";
     std::cerr << "Options:\n\n"
-              << "-h|--help       : display this message\n"
-              << "--n <int>       : number of points in each direction (default: 401)\n"
-              << "--n0 <int>      : number of points in the X direction (default: 401)\n"
-              << "--n1 <int>      : number of points in the Y direction (default: 401)\n"
-              << "--n2 <int>      : number of points in the Z direction (default: 401)\n"
-              << "--dt <real>     : time step size (default : value to assure stable computations)\n"
-              << "--it <int>      : number of time steps (default : 10)\n"
-              << "--out <int>     : number of time steps between saving the solution on files\n"
+              << "-h|--help        : display this message\n"
+#ifdef _OPENMP
+              << "--threads <int>  : nombre de threads OpenMP\n"
+#endif
+              << "--n <int>        : number of points in each direction (default: 401)\n"
+              << "--n0 <int>       : number of points in the X direction (default: 401)\n"
+              << "--n1 <int>       : number of points in the Y direction (default: 401)\n"
+              << "--n2 <int>       : number of points in the Z direction (default: 401)\n"
+              << "--dt <real>      : time step size (default : value to assure stable computations)\n"
+              << "--it <int>       : number of time steps (default : 10)\n"
+              << "--out <int>      : number of time steps between saving the solution on files\n"
               << "                 (default : no output)\n\n";
   }
   return m_help;
@@ -191,7 +212,7 @@ std::ostream & operator<<(std::ostream &f, const Parameters & p)
   std::string message = s.str();
 
   if (p.rank() == 0) {
-    f << "Processes :" << p.size() << "\n"
+    f << "Thread(s) :" << p.nthreads() << "\n"
       << "It. max :  " << p.itmax() << "\n"
       << "Dt :       " << p.dt() << "\n" << std::endl;
   }

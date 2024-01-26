@@ -2,7 +2,7 @@
 #include <cstring>
 #include <iostream>
 
-Arguments::Arguments(const int argc, char **argv)
+Arguments::Arguments(int argc, char **argv)
 {
   const char * optionName = NULL;
 
@@ -26,18 +26,18 @@ Arguments::Arguments(const int argc, char **argv)
 #include <algorithm>
 
 template<>
-bool Arguments::Get(const char * name, const bool defaultValue)
+bool Arguments::Get(const char * name, bool defaultValue)
 {
   std::map<std::string, std::string>::iterator t = _arguments.find(name);
   if (t == _arguments.end())
      return defaultValue;
   std::string tt = t->second;
   std::transform(tt.begin(), tt.end(), tt.begin(), ::toupper);
-  return !((tt == "0") || (tt == "N") || (tt == "NO") || (tt == "OFF"));
+  return (tt == "0") || (tt == "NO") || (tt == "OFF");
 }
 
 template<>
-int Arguments::Get(const char * name, const int defaultValue)
+int Arguments::Get(const char * name, int defaultValue)
 {
   std::map<std::string, std::string>::iterator t = _arguments.find(name);
   if (t == _arguments.end())
@@ -46,16 +46,7 @@ int Arguments::Get(const char * name, const int defaultValue)
 }
 
 template<>
-unsigned long Arguments::Get(const char * name, const unsigned long defaultValue)
-{
-  std::map<std::string, std::string>::iterator t = _arguments.find(name);
-  if (t == _arguments.end())
-     return defaultValue;
-  return strtol(t->second.c_str(), NULL, 10);
-}
-
-template<>
-double Arguments::Get(const char *name, const double defaultValue)
+double Arguments::Get(const char *name, double defaultValue)
 {
   std::map<std::string, std::string>::iterator t = _arguments.find(name);
   if (t == _arguments.end())

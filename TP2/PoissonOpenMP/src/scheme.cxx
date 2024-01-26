@@ -2,7 +2,7 @@
 #include "parameters.hxx"
 #include "version.hxx"
 #include "force.hxx"
-#include<omp.h>
+
 #include <cmath>
 
 #include <sstream>

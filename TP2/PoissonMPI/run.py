@@ -15,7 +15,7 @@ def manage():
     version = os.path.basename(baseDir)
     
     args = standardArgs(baseDir, True, version)
-    installDir = os.path.join(baseDir, 'install')
+    installDir = os.path.join('install', args['compiler'])
     
     if version == "PoissonSeq":
         codeRef = os.path.join(installDir, "PoissonSeq")
@@ -30,7 +30,7 @@ def manage():
     c = commands(codeRef, codePar, args)
     print(os.path.basename(baseDir) + ' :', file=sys.stderr)
 
-    logFile = 'log_' + version + '.txt'
+    logFile = 'log_' + args['version'] + '.txt'
     with open(logFile, 'w') as log:
         for l in c:
             print(' '.join(l), file=sys.stderr)

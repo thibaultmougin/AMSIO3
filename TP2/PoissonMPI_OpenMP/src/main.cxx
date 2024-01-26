@@ -27,13 +27,14 @@ int main(int argc, char *argv[])
 
   T_total.start();
 
-  int provided;
-  MPI_Init_thread(&argc, &argv, MPI_THREAD_FUNNELED, &provided);
-  if (provided < MPI_THREAD_FUNNELED){
-    MPI_Abort(MPI_COMM_WORLD, -1);}  
-  
+    int required = MPI_THREAD_FUNNELED, provided;
+    MPI_Init_thread (&argc, &argv, required, &provided);
+    if (provided < required)
+    {
+       printf("erreur");
+       exit(-1);
+    }
   int rank, size;
-    
   MPI_Comm_size(MPI_COMM_WORLD, &size);
   MPI_Comm_rank(MPI_COMM_WORLD, &rank);
 

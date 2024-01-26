@@ -1,2 +1,0 @@
-/home/tmougin/cours/TP-AMSIO3/TP2/PoissonOpenMP/install/./PoissonOpenMP
-/home/tmougin/cours/TP-AMSIO3/TP2/PoissonOpenMP/install/./PoissonSeq

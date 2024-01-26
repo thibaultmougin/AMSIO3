@@ -16,7 +16,6 @@ acc_in = '''
 '''
 
 acc_out = '''
-#SBATCH --partition=cpu_dist
 #SBATCH --partition=cpu_test
 ##SBATCH --reservation=ams301_csp
 #SBATCH --account=ams301
@@ -24,16 +23,16 @@ acc_out = '''
 
 # annee, mois, jour, debut(heure.minute), fin(heure.minute)
 courses = [
-  [2022, 11, 25,  9.0, 12.16],
-  [2022, 12,  2,  9.0, 12.16],
-  [2022, 12,  9,  9.0, 12.16],
-  [2022, 12, 16,  9.0, 12.16],
-  [2023,  1,  6,  9.0, 12.16],
-  [2023,  1, 13,  9.0, 12.16],
-  [2023,  1, 20,  9.0, 12.16],
-  [2023,  1, 27,  9.0, 12.16],
-  [2023,  2,  3,  9.0, 12.16],
-  [2023,  2, 10,  9.0, 12.16]
+  [2023, 12,  1,  9.0, 12.16],
+  [2023, 12,  8,  9.0, 12.16],
+  [2023, 12, 15,  9.0, 12.16],
+  [2023, 12, 22,  9.0, 12.16],
+  [2024,  1, 12,  9.0, 12.16],
+  [2024,  1, 19,  9.0, 12.16],
+  [2024,  1, 26,  9.0, 12.16],
+  [2024,  2,  2,  9.0, 12.16],
+  [2024,  2,  9,  9.0, 12.16],
+  [2024,  2, 16,  9.0, 12.16]
 ]
 
 
@@ -97,7 +96,7 @@ def standardArgs(baseDir, direct, version):
     if not direct:
         parser.add_argument('--runtime', '-r', type=int, default=10, help='maximum running time (default 10 minutes)')
     
-    if version.startswith("PoissonOpenMP"):
+    if "OpenMP" in version:
         parser.add_argument('--threadsMax', type=int, default=8, help='number of threads')
     if "Coarse" in version:
         parser.add_argument('--balances', type=int, default=0, help='number of load balancing steps')

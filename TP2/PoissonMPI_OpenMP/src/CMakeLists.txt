@@ -1,11 +1,13 @@
 cmake_minimum_required(VERSION 3.10)
 
-project(OpenMP)
+project(MPI_OpenMP)
 
-find_package(MPI REQUIRED)
+find_package(MPI REQUIRED COMPONENTS CXX)
+find_package(OpenMP REQUIRED)
 
 set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
+set(CMAKE_VERBOSE_MAKEFILE OFF)
 set(CMAKE_CXX_STANDARD 11)
 
 if (${CMAKE_BUILD_TYPE} STREQUAL "Debug")
@@ -35,7 +37,7 @@ add_executable(
   ${SRCS}
   )
 
-target_link_libraries(PoissonMPI_OpenMP PUBLIC MPI::MPI_CXX)
+target_link_libraries(PoissonMPI_OpenMP PUBLIC MPI::MPI_CXX OpenMP::OpenMP_CXX)
 
 install(TARGETS PoissonMPI_OpenMP DESTINATION .)
 

@@ -6,15 +6,19 @@ try:
 except NameError:
     unicode = str
 
-import os, sys, subprocess
+import os, sys, subprocess, argparse
 from util import *
+
+parser = argparse.ArgumentParser()
+parser.add_argument('-c', '--compiler', choices=['intel', 'gnu'], default='gnu')
+args = parser.parse_args()
 
 def manage():
     job = '''#!/bin/bash
 
 #SBATCH --job-name=build_poisson
-#SBATCH --output=output_build.txt
-#SBATCH --error=output_build.txt
+#SBATCH --output=output.txt
+#SBATCH --error=output.txt
 
 @ACC@
 
@@ -27,16 +31,21 @@ def manage():
 module purge
 module load cmake/3.19.7
 
-module load intel_compiler/19.1.3.304
-module load intel_mpi/2019.9
+@MODULES@
 
 ## execution
-/mnt/beegfs/softs/intel/intelpython3/bin/python -u ./build.py -c intel
+python3 -u ./build.py -c @COMPILER@
 
 '''
 
     s = job
     s = s.replace("@ACC@", queue())
+
+    s = s.replace("@COMPILER@", args.compiler)
+    if args.compiler == 'intel':
+        s = s.replace("@MODULES@", "module load intel_compiler/19.1.3.304\n")
+    elif args.compiler == 'gnu':
+        s = s.replace("@MODULES@", "module load gcc\n")
 
     rs = 0
     rm = 30
@@ -51,8 +60,8 @@ module load intel_mpi/2019.9
     with open(jobFile, 'w') as f:
        f.write(s)
 
-    if os.path.exists('output_build.txt'):
-       os.unlink('output_build.txt')
+    if os.path.exists('output.txt'):
+       os.unlink('output.txt')
  
     subprocess.call(['sbatch', jobFile])
 

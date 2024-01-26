@@ -12,7 +12,7 @@ public:
   Arguments(int argc, char ** argv);
 
   template <typename T>
-  T Get(const char *name, const T defaultValue);
+  T Get(const char *name, T defaultValue);
 
 private:
 
