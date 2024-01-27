@@ -1,8 +1,8 @@
-# Install script for directory: /home/tmougin/cours/TP2_incomplet/PoissonOpenMP/src
+# Install script for directory: /home/tmougin/cours/TP-AMSIO3/TP2/PoissonOpenMP/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/tmougin/cours/TP2_incomplet/PoissonOpenMP/install/gnu")
+  set(CMAKE_INSTALL_PREFIX "/home/tmougin/cours/TP-AMSIO3/TP2/PoissonOpenMP/install/gnu")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,7 +49,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./PoissonOpenMP"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE EXECUTABLE FILES "/home/tmougin/cours/TP2_incomplet/PoissonOpenMP/build/gnu/PoissonOpenMP")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE EXECUTABLE FILES "/home/tmougin/cours/TP-AMSIO3/TP2/PoissonOpenMP/build/gnu/PoissonOpenMP")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./PoissonOpenMP" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./PoissonOpenMP")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -65,7 +65,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./PoissonSeq"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE EXECUTABLE FILES "/home/tmougin/cours/TP2_incomplet/PoissonOpenMP/build/gnu/PoissonSeq")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/." TYPE EXECUTABLE FILES "/home/tmougin/cours/TP-AMSIO3/TP2/PoissonOpenMP/build/gnu/PoissonSeq")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./PoissonSeq" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/./PoissonSeq")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -82,5 +82,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/tmougin/cours/TP2_incomplet/PoissonOpenMP/build/gnu/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/tmougin/cours/TP-AMSIO3/TP2/PoissonOpenMP/build/gnu/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

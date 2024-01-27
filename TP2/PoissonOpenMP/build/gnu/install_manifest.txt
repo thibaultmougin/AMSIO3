@@ -1,2 +1,2 @@
-/home/tmougin/cours/TP2_incomplet/PoissonOpenMP/install/gnu/./PoissonOpenMP
-/home/tmougin/cours/TP2_incomplet/PoissonOpenMP/install/gnu/./PoissonSeq
+/home/tmougin/cours/TP-AMSIO3/TP2/PoissonOpenMP/install/gnu/./PoissonOpenMP
+/home/tmougin/cours/TP-AMSIO3/TP2/PoissonOpenMP/install/gnu/./PoissonSeq

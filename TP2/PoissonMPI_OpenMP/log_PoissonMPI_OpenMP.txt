@@ -138,3 +138,24 @@ temps     :       7.850       5.075       3.648
 speedups  :       1.000       1.547       2.152
 last diff :   11755.559   11755.559   11755.559
 
+
+processes :           1           2           4
+threads   :           8           5           4
+temps     :       7.850       5.075       3.648
+speedups  :       1.000       1.547       2.152
+last diff :   11755.559   11755.559   11755.559
+
+
+processes :           1           2           4
+threads   :           8           5           4
+temps     :       7.850       5.075       3.648
+speedups  :       1.000       1.547       2.152
+last diff :   11755.559   11755.559   11755.559
+
+
+processes :           1           2           4
+threads   :           8           5           4
+temps     :       7.850       5.075       3.648
+speedups  :       1.000       1.547       2.152
+last diff :   11755.559   11755.559   11755.559
+

@@ -1,5 +1,5 @@
 CMakeFiles/PoissonSeq.dir/common/os.cxx.o: \
- /home/tmougin/cours/TP2_incomplet/PoissonOpenMP/src/common/os.cxx \
+ /home/tmougin/cours/TP-AMSIO3/TP2/PoissonOpenMP/src/common/os.cxx \
  /usr/include/stdc-predef.h /usr/include/x86_64-linux-gnu/sys/types.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -54,7 +54,7 @@ CMakeFiles/PoissonSeq.dir/common/os.cxx.o: \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
  /usr/include/c++/11/bits/std_abs.h \
- /home/tmougin/cours/TP2_incomplet/PoissonOpenMP/src/common/os.hxx \
+ /home/tmougin/cours/TP-AMSIO3/TP2/PoissonOpenMP/src/common/os.hxx \
  /usr/include/x86_64-linux-gnu/sys/stat.h \
  /usr/include/x86_64-linux-gnu/bits/stat.h \
  /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
