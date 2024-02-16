@@ -6,7 +6,7 @@
 #include "iteration.hxx"
 
 __global__
-void noyau_iteration(double *v, double* u, double dt){
+void noyau_iteration(double *v, double *u, double dt){
     int i = threadIdx.x + blockIdx.x * blockDim.x;
     int j = threadIdx.y + blockIdx.y * blockDim.y;
     int k = threadIdx.z + blockIdx.z * blockDim.z;
