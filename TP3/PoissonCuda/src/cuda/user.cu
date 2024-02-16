@@ -1,6 +1,8 @@
 #include "dim.cuh"
 #include "cuda_check.cuh"
 #include "user.cuh"
+#include <cmath>
+
 
 #include "timer.hxx"
 #include "iteration.hxx"
