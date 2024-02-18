@@ -36,7 +36,7 @@ python build.py
 
 ## execution
 
-./install/PoissonCuda @ARGS@
+./install/release/PoissonCuda @ARGS@
 '''
 
 job = job.replace('@ARGS@', ' '.join(sys.argv))
